@@ -1,0 +1,106 @@
+
+
+$tot-width: 100%;
+$num-col: 15;
+$gut-width: 3%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remember PEMAS //ALWAYS HAVE SPACE between $var - #
+
+         // col-within = # of columns within element
+@mixin grid($col-within){
+  width: ($col-within * $ind-col-width) + ($gut-width *($col-within - 1 ));
+}
+
+
+@media (min-width: 0){
+
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15{
+    width: 100%;
+    margin-right: $gut-width;
+  }
+  
+}
+
+body{
+	background-color: #5B2815;
+}
+
+
+@media (min-width: 500px){
+  
+  .col-md-1{
+    width: 3.86666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-2{
+    width: 10.7333333333%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-3{
+    width: 17.6%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-4{
+    width: 24.4666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-5{
+    width: 31.3333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-6{
+    width: 38.2%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-7{
+    width: 45.0666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-8{
+    width: 51.9333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-9{
+    width: 58.8%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-10{
+    width: 65.6666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-11{
+    width: 72.5333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-12{
+    width: 79.4%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-13{
+    width: 86.2666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-14{
+    width: 93.1333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-15{
+    width: 100%;
+    margin-right: $gut-width;
+  }
+  
+}
