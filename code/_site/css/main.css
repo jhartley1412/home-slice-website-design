@@ -1,0 +1,130 @@
+@imports 'breakpoints.scss';
+@media (min-width: 0) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
+    width: 100%;
+    margin-right: 0; } }
+@media (min-width: 500px) {
+  .col-md-1 {
+    width: 6.66666666667%;
+    margin-right: 0; }
+
+  .col-md-2 {
+    width: 13.3333333333%;
+    margin-right: 0; }
+
+  .col-md-3 {
+    width: 20%;
+    margin-right: 0; }
+
+  .col-md-4 {
+    width: 26.6666666667%;
+    margin-right: 0; }
+
+  .col-md-5 {
+    width: 33.3333333333%;
+    margin-right: 0; }
+
+  .col-md-6 {
+    width: 40%;
+    margin-right: 0; }
+
+  .col-md-7 {
+    width: 46.6666666667%;
+    margin-right: 0; }
+
+  .col-md-8 {
+    width: 53.3333333334%;
+    margin-right: 0; }
+
+  .col-md-9 {
+    width: 60%;
+    margin-right: 0; }
+
+  .col-md-10 {
+    width: 66.6666666667%;
+    margin-right: 0; }
+
+  .col-md-11 {
+    width: 73.3333333334%;
+    margin-right: 0; }
+
+  .col-md-12 {
+    width: 80%;
+    margin-right: 0; }
+
+  .col-md-13 {
+    width: 86.6666666667%;
+    margin-right: 0; }
+
+  .col-md-14 {
+    width: 93.3333333334%;
+    margin-right: 0; }
+
+  .col-md-15 {
+    width: 100%;
+    margin-right: 0; } }
+body {
+  font-family: "ff-tisa-sans-web-pro";
+  line-height: 2; }
+
+header {
+  margin: 2rem auto; }
+
+nav {
+  background-color: #d30300;
+  width: 100%;
+  height: 50px; }
+
+.hours-container {
+  background-color: #529843;
+  width: 100%;
+  height: 35px; }
+
+.wrapper {
+  height: 800px;
+  background-color: #e9f898; }
+
+.home-page-container {
+  display: inline-block; }
+
+.big-picture {
+  width: 100%;
+  height: 400px;
+  background-color: #C8B968;
+  background-image: '../../restaurant-redesign/images/restaurant-photos/yelp3'; }
+
+.sicilian-mondays {
+  height: 350px;
+  background-color: #5B2815;
+  float: left; }
+
+.queen-of-pies {
+  height: 350px;
+  background-color: #638AF2;
+  float: left; }
+
+.our-photos {
+  height: 300px;
+  background-color: #DEB540;
+  float: left; }
+
+.our-events {
+  height: 300px;
+  background-color: #529843;
+  float: left; }
+
+footer {
+  height: 300px;
+  background-color: #252525;
+  clear: both;
+  color: white; }
+  footer a {
+    color: #e9f898; }
+
+.foot-maillist, .foot-copyright-info {
+  width: 50%;
+  min-width: 400px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bold; }
