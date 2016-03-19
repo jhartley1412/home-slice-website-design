@@ -114,6 +114,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 }
 
 
+
+body{
+	font-family: "ff-tisa-sans-web-pro";
+	line-height: 2;
+}
+
+
 // header - nav bar
 
 header{
@@ -163,21 +170,22 @@ nav{
 }
 
 .our-photos{
-	height: 350px; //placeholder
+	height: 300px; //placeholder
 	background-color: #DEB540;
 	float: left;
 }
 
 .our-events{
-	height: 350px; //placeholder
+	height: 300px; //placeholder
 	background-color: $brand-color2;
 	float: left;
 }
 
 
 footer{
-	height: 300px;
+	height: 300px; //placeholder
 	background-color: #252525;
+	clear: both;
 
 	color: white;
 
@@ -186,6 +194,18 @@ footer{
 	}
 }
 
+%foot-divs{
+	width: 50%;
+	min-width: 400px;
+	margin: 0 auto;
+	padding-top: 3rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.foot-maillist, .foot-copyright-info{
+	@extend %foot-divs;
+}
 
 
 
