@@ -73,36 +73,151 @@ header {
 nav {
   background-color: #d30300;
   width: 100%;
-  height: 50px; }
+  height: 55px; }
+
+.nav-buttons-container {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 0.7rem; }
+  .nav-buttons-container a {
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none; }
+    .nav-buttons-container a:hover {
+      background-color: #652319;
+      cursor: pointer; }
 
 .hours-container {
   background-color: #529843;
   width: 100%;
-  height: 35px; }
-
-.wrapper {
-  height: 800px;
-  background-color: #e9f898; }
+  height: 15px;
+  text-align: center; }
+  .hours-container a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+    border-radius: 10px; }
+    .hours-container a:hover {
+      background-color: #468238; }
 
 .home-page-container {
   display: inline-block; }
 
 .big-picture {
   width: 100%;
-  height: 400px;
-  background-color: #C8B968; }
+  padding-bottom: 2rem; }
 
 .pizza-image {
   width: 100%;
-  height: 100%;
-  max-width: 850px;
+  max-width: 960px;
   margin: 0 auto;
-  background-color: #8D3124; }
+  padding: 5rem 0;
+  position: relative;
+  background-color: #5f2c01;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden; }
+  .pizza-image:hover {
+    cursor: pointer; }
+  .pizza-image a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400; }
+    .pizza-image a:hover {
+      color: #529843; }
+
+.welcoming-messege {
+  z-index: 2;
+  padding: 1rem 0 2rem 4rem;
+  display: inline-block;
+  position: relative; }
+  .welcoming-messege h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 auto; }
+    .welcoming-messege h1 sup {
+      top: -1.8rem; }
+
+.to-go-box {
+  z-index: 2;
+  padding: 1rem;
+  margin-top: 0;
+  display: inline-block;
+  position: relative;
+  background-color: #dd6503;
+  margin-left: 8rem; }
+  .to-go-boxhover {
+    cursor: pointer; }
+  .to-go-box h2 {
+    text-align: right;
+    margin: 0 auto;
+    line-height: 40px; }
+
+.text-20 {
+  font-size: 20px; }
+
+.text-28 {
+  font-size: 28px; }
+
+.text-45 {
+  font-size: 45px;
+  padding-top: -10px; }
+
+.text-55 {
+  font-size: 55px; }
+
+.text-80 {
+  font-size: 80px;
+  line-height: 20px; }
+
+.text-100 {
+  font-size: 100px;
+  line-height: 50px; }
+
+.big-picture-pizza {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 960px;
+  opacity: 0.6; }
 
 .sicilian-mondays {
-  height: 350px;
-  background-color: #5B2815;
-  float: left; }
+  background-color: #a00200;
+  float: left;
+  padding: 2rem 0;
+  text-align: center;
+  position: relative; }
+  .sicilian-mondays h2 {
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto; }
+  .sicilian-mondays h3 {
+    z-index: 2;
+    margin-top: 0;
+    position: relative;
+    color: #e9f898;
+    text-border: 1px solid #d30300;
+    font-size: 40px;
+    line-height: 1.2; }
+
+.sicilian-image {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9; }
 
 .queen-of-pies {
   height: 350px;
