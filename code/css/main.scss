@@ -2,12 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@imports 'breakpoints.scss';
 
 $brand-color1: #d30300; //red
 $brand-color2: #529843; //green
 $brand-color3: #dd6503; //orange
 $brand-color4: #e9f898; //yellow
+$brand-color5: #252525; //grey
 
 
 // breakpoints
@@ -36,7 +36,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 }
 
 
-@media (min-width: 500px){
+@media (min-width: 900px){
   
   .col-md-1{
     width: 6.66666666667%;
@@ -120,6 +120,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 body{
 	font-family: "ff-tisa-sans-web-pro";
 	line-height: 2;
+  background-color: $brand-color5;
+
+  a{
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }
 
 
@@ -130,20 +137,45 @@ header{
 }
 
 nav{
+  z-index: 1;
 	background-color: $brand-color1;
 	width: 100%;
-	height: 55px;
+	height: 80px;
+  font-family: "ff-more-web-pro-condensed", serif;
+  font-size: 30px;
+}
+
+.logo-and-tagline{
+  z-index: 2;
+  position: absolute;
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+
+.logo{
+  width: 184px;
+}
+
+.tagline{
+  color: white;
+  float: right;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-family: "ff-more-web-pro-condensed", serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .nav-buttons-container{
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 100%;
   margin: 0 auto;
   padding-top: 0.7rem;
   
   a{
-    padding: 0.3rem 1rem 0.4rem 1rem;
+    padding: 0.6rem 1rem 0.4rem 1rem;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -176,10 +208,13 @@ nav{
 }
 
 
+
+
 // wrapper - main middle content
 
 .home-page-container{
 	display: inline-block;
+  height: 300px;
 }
 
 .big-picture{
@@ -216,7 +251,7 @@ nav{
 
 .welcoming-messege{
   z-index: 2;
-  padding: 1rem 0 2rem 4rem;
+  padding: 0 0 2rem 4rem;
   display: inline-block;
   position: relative;
 
@@ -224,7 +259,7 @@ nav{
     color: white;
     font-size: 30px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0 auto;
 
     sup{
@@ -241,15 +276,25 @@ nav{
   position: relative;
   background-color: $brand-color3;
   margin-left: 8rem;
+  border-sizing: border-box;
+  border-radius: 20px;
 
   &hover{
     cursor: pointer;
   }
 
   h2{
+    z-index: 2;
     text-align: right;
     margin: 0 auto;
     line-height: 40px;
+  }
+
+  .fa-long-arrow-right{
+    z-index: 3;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 1rem;
   }
 }
 
@@ -281,7 +326,7 @@ nav{
 
 .text-100{
   font-size: 100px;
-  line-height: 50px;
+  line-height: 70px;
 }
 
 
@@ -295,11 +340,11 @@ nav{
 
 %front-page-image-container{
   float: left;
-  padding: 3rem 0;
-  max-height: 350px;
+  padding-top: 3rem;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  text-align: center;
 }
 
 %front-page-bg-image{
@@ -311,35 +356,43 @@ nav{
   margin: 0 auto;
 }
 
-.first-row{
+%front-page-h3{
+  z-index: 2;
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+%front-page-h2{
+  z-index: 2;
+  color: $brand-color4;
+  font-size: 55px;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.row{
   width: 100%;
+  overflow: hidden;
+
   background-color: $brand-color2;
 }
 
 .sicilian-mondays{
 	background-color: darken($brand-color1, 10%);
-  text-align: center;
 
   @extend %front-page-image-container;
 
-  h2{
-    z-index: 2;
-    position: relative;
-    color: white;
-    font-size: 25px;
-    margin: 0 auto;
+  h3{
+    @extend %front-page-h3;
+    padding-top: 2rem;
   }
 
-  h3{
-    z-index: 2;
-    margin: 0;
-    padding-top: -1rem;
-    position: relative;
-    color: $brand-color4;
-    text-border: 1px solid $brand-color1;
-    font-size: 55px;
-    line-height: 1.2;
+  h2{
+    @extend %front-page-h2;
   }
+  
 }
 
 .sicilian-image{
@@ -347,50 +400,69 @@ nav{
 }
 
 .queen-of-pies{
-	@extend %front-page-image-container;
+  background-color: darken($brand-color2, 10%);
 
-  h2{
-    z-index: 2;
-    font-style: italic;
-    color: white;
-    font-size: 25px;
-  }
+  @extend %front-page-image-container;
 
   h3{
-    z-index: 2;
-    font-style: italic;
-    color: $brand-color4;
-    font-size: 55px;
+    @extend %front-page-h3;
+    margin-left: -6rem;
+    padding-top: 3.5rem;
   }
+
+  h2{
+    @extend %front-page-h2;
+    font-style: italic;
+  }
+
 }
 
 .queen-of-pies-image{
   @extend %front-page-bg-image;
-  width: 100%;
+
 }
 
 .our-photos{
-	height: 300px; //placeholder
-	background-color: #DEB540;
-	float: left;
+  background-color: $brand-color1;
+
+  @extend %front-page-image-container;
+
+  h3{
+    @extend %front-page-h3;
+    padding-top: 3rem;
+  }
+
+  h2{
+    @extend %front-page-h2;
+  }
 }
 
 .our-events{
-	height: 300px; //placeholder
-	background-color: $brand-color2;
-	float: left;
+  background-color: $brand-color2;
+
+  @extend %front-page-image-container;
+
+  h3{
+    @extend %front-page-h3;
+    padding-top: 3rem;
+  }
+
+  h2{
+    @extend %front-page-h2;
+  }
+	
 }
 
 
 footer{
   padding-bottom: 2rem;
-	background-color: #252525;
+	background-color: $brand-color5;
 	clear: both;
 
 	color: white;
 
 	a{
-		color: #e9f898;
+		color: $brand-color4;
 	}
 }
 
