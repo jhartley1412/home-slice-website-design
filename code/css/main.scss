@@ -261,6 +261,10 @@ nav{
   font-size: 28px;
 }
 
+.text-35{
+  font-size: 35px;
+}
+
 .text-45{
   font-size: 45px;
   padding-top: -10px;
@@ -282,59 +286,87 @@ nav{
 
 
 .big-picture-pizza{
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  @extend %front-page-bg-image;
   height: 100%;
   max-width: 960px;
   opacity: 0.6;
 }
 
 
+%front-page-image-container{
+  float: left;
+  padding: 3rem 0;
+  max-height: 350px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
+%front-page-bg-image{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.first-row{
+  width: 100%;
+  background-color: $brand-color2;
+}
 
 .sicilian-mondays{
 	background-color: darken($brand-color1, 10%);
-	float: left;
-  padding: 2rem 0;
   text-align: center;
-  position: relative;
+
+  @extend %front-page-image-container;
 
   h2{
     z-index: 2;
     position: relative;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     margin: 0 auto;
   }
 
   h3{
     z-index: 2;
-    margin-top: 0;
+    margin: 0;
+    padding-top: -1rem;
     position: relative;
     color: $brand-color4;
     text-border: 1px solid $brand-color1;
-    font-size: 40px;
+    font-size: 55px;
     line-height: 1.2;
   }
 }
 
 .sicilian-image{
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
+  @extend %front-page-bg-image;
 }
 
 .queen-of-pies{
-	height: 350px; //placeholder
-	background-color: #638AF2;
-	float: left;
+	@extend %front-page-image-container;
+
+  h2{
+    z-index: 2;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+  }
+
+  h3{
+    z-index: 2;
+    font-style: italic;
+    color: $brand-color4;
+    font-size: 55px;
+  }
+}
+
+.queen-of-pies-image{
+  @extend %front-page-bg-image;
+  width: 100%;
 }
 
 .our-photos{

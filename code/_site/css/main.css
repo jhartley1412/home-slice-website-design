@@ -164,6 +164,9 @@ nav {
 .text-28 {
   font-size: 28px; }
 
+.text-35 {
+  font-size: 35px; }
+
 .text-45 {
   font-size: 45px;
   padding-top: -10px; }
@@ -180,49 +183,62 @@ nav {
   line-height: 50px; }
 
 .big-picture-pizza {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
   max-width: 960px;
   opacity: 0.6; }
 
-.sicilian-mondays {
-  background-color: #a00200;
+.sicilian-mondays, .queen-of-pies {
   float: left;
-  padding: 2rem 0;
-  text-align: center;
-  position: relative; }
-  .sicilian-mondays h2 {
-    z-index: 2;
-    position: relative;
-    color: white;
-    font-size: 18px;
-    margin: 0 auto; }
-  .sicilian-mondays h3 {
-    z-index: 2;
-    margin-top: 0;
-    position: relative;
-    color: #e9f898;
-    text-border: 1px solid #d30300;
-    font-size: 40px;
-    line-height: 1.2; }
+  padding: 3rem 0;
+  max-height: 350px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden; }
 
-.sicilian-image {
+.big-picture-pizza, .sicilian-image, .queen-of-pies-image {
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  opacity: 0.9; }
+  margin: 0 auto; }
 
-.queen-of-pies {
-  height: 350px;
-  background-color: #638AF2;
-  float: left; }
+.first-row {
+  width: 100%;
+  background-color: #529843; }
+
+.sicilian-mondays {
+  background-color: #a00200;
+  text-align: center; }
+  .sicilian-mondays h2 {
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto; }
+  .sicilian-mondays h3 {
+    z-index: 2;
+    margin: 0;
+    padding-top: -1rem;
+    position: relative;
+    color: #e9f898;
+    text-border: 1px solid #d30300;
+    font-size: 55px;
+    line-height: 1.2; }
+
+.queen-of-pies h2 {
+  z-index: 2;
+  font-style: italic;
+  color: white;
+  font-size: 25px; }
+.queen-of-pies h3 {
+  z-index: 2;
+  font-style: italic;
+  color: #e9f898;
+  font-size: 55px; }
+
+.queen-of-pies-image {
+  width: 100%; }
 
 .our-photos {
   height: 300px;
