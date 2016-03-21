@@ -313,29 +313,99 @@ nav {
 .menu-container {
   width: 100%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: #e9f898;
   overflow: hidden;
+  border-sizing: border-box;
+  border: 20px solid #d30300;
+  border-radius: 20px;
   line-height: 1.4; }
-
-.pizza-toppings, .tried-and-true {
-  width: 40%;
-  margin: auto 5%;
-  float: left;
-  overflow: hidden; }
-  .pizza-toppings h2, .tried-and-true h2 {
+  .menu-container h1 {
+    font-family: "ff-more-web-pro-condensed";
+    text-align: center;
+    margin-bottom: 2rem; }
+  .menu-container h2 {
     text-align: center;
     margin-bottom: 0.2rem;
     font-family: "ff-more-web-pro-condensed"; }
 
-.menu-pizza {
+.menu-pizza, .menu-booze, .menu-salads-antipasta, .menu-desserts-drinks {
   width: 100%;
   overflow: hidden; }
 
-.tried-and-true h3 {
-  text-align: center;
-  margin-top: 0; }
+.menu-booze h2 {
+  text-align: center; }
+.menu-booze h3 {
+  text-align: center; }
 
+@media (min-width: 0px) {
+  .pizza-toppings {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+
+  .tried-and-true {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .tried-and-true h3 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px; }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
+      font-weight: 400; }
+
+  .desserts, .beverages {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .desserts h3, .beverages h3 {
+      font-weight: 400; }
+    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+      text-align: center; } }
+@media (min-width: 600px) {
+  .pizza-toppings {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+
+  .tried-and-true {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .tried-and-true h3 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px; }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
+      font-weight: 400; }
+
+  .desserts, .beverages {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .desserts h3, .beverages h3 {
+      font-weight: 400; }
+    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+      text-align: center; } }
 .row-food {
   width: 90%;
   overflow: hidden; }
@@ -348,16 +418,23 @@ nav {
   width: 300px;
   margin: 0 auto; }
 
+.menu-italic {
+  font-style: italic;
+  font-size: 1rem; }
+
 .food-price {
   float: right;
   font-style: italic;
-  padding-right: 2rem;
   margin: 0 auto 0.5rem; }
 
 .food-extra-info {
   float: left;
   font-size: 14px;
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.menu-food-info-bold {
+  font-weight: 700; }
 
 footer {
   padding-bottom: 2rem;
