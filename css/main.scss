@@ -27,11 +27,14 @@ body{
   }
 }
 
+.bold-text{
+  font-weight: bold;
+}
+
 
 // header - nav bar
 
 header{
-  margin-bottom: 2rem;
   overflow: hidden;
 }
 
@@ -82,23 +85,15 @@ nav{
 }
 
 
-.bold-text{
-  font-weight: bold;
-}
 
-
-// wrapper - main middle content
-
-.wrapper{
-  padding-top: 2rem;
-}
+// main middle content
 
 .home-page-container{
 	display: inline-block;
   height: 300px;
 }
 
-.big-picture{
+.home-slice-intro{
 	width: 100%;
   padding-bottom: 2rem;
 }
@@ -108,7 +103,7 @@ nav{
   width: 100%;
   max-width: 1200px;
   min-height: 500px;
-  margin: 0 auto;
+  margin: 3rem auto 2rem auto;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -252,41 +247,6 @@ nav{
 
 
 
-// different font sizes
-
-.text-20{
-  font-size: 20px;
-}
-
-.text-28{
-  font-size: 28px;
-}
-
-.text-35{
-  font-size: 35px;
-}
-
-.text-45{
-  font-size: 45px;
-  padding-top: -10px;
-}
-
-.text-55{
-  font-size: 55px;
-}
-
-.text-80{
-  font-size: 80px;
-  line-height: 20px;
-}
-
-.text-100{
-  font-size: 100px;
-  line-height: 70px;
-}
-
-
-
 
 
 %front-page-image-container{
@@ -344,9 +304,12 @@ nav{
 
 .row{
   width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+  max-height: 300px;
   overflow: hidden;
+  box-sizing: border-box;
+  border: 25px solid $brand-color1;
+  border-left: none;
+  border-right: none;
 
   background-color: $brand-color2;
 }
