@@ -1,0 +1,455 @@
+@media (min-width: 0) {
+  .logo-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -20px; }
+
+  .logo {
+    width: 100%; }
+
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
+    width: 100%;
+    margin-right: 0; } }
+@media (min-width: 600px) {
+  .logo-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px; }
+
+  .logo {
+    width: 100%; } }
+@media (min-width: 900px) {
+  .logo-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px; }
+
+  .logo {
+    width: 100%; }
+
+  .col-md-1 {
+    width: 6.66666666667%;
+    margin-right: 0; }
+
+  .col-md-2 {
+    width: 13.3333333333%;
+    margin-right: 0; }
+
+  .col-md-3 {
+    width: 20%;
+    margin-right: 0; }
+
+  .col-md-4 {
+    width: 26.6666666667%;
+    margin-right: 0; }
+
+  .col-md-5 {
+    width: 33.3333333333%;
+    margin-right: 0; }
+
+  .col-md-6 {
+    width: 40%;
+    margin-right: 0; }
+
+  .col-md-7 {
+    width: 46.6666666667%;
+    margin-right: 0; }
+
+  .col-md-8 {
+    width: 53.3333333334%;
+    margin-right: 0; }
+
+  .col-md-9 {
+    width: 60%;
+    margin-right: 0; }
+
+  .col-md-10 {
+    width: 66.6666666667%;
+    margin-right: 0; }
+
+  .col-md-11 {
+    width: 73.3333333334%;
+    margin-right: 0; }
+
+  .col-md-12 {
+    width: 80%;
+    margin-right: 0; }
+
+  .col-md-13 {
+    width: 86.6666666667%;
+    margin-right: 0; }
+
+  .col-md-14 {
+    width: 93.3333333334%;
+    margin-right: 0; }
+
+  .col-md-15 {
+    width: 100%;
+    margin-right: 0; } }
+body {
+  font-family: "ff-tisa-sans-web-pro";
+  line-height: 2; }
+  body a:hover {
+    cursor: pointer; }
+
+header {
+  margin-bottom: 2rem;
+  overflow: hidden; }
+
+nav {
+  z-index: 1;
+  background-color: #d30300;
+  width: 100%;
+  float: left;
+  font-family: "ff-more-web-pro-condensed", serif;
+  font-size: 30px;
+  position: relative;
+  border-bottom: 25px solid #529843; }
+
+.nav-buttons-container {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 0.7rem;
+  overflow: hidden; }
+  .nav-buttons-container a {
+    padding: 0.6rem 1.1rem 0.4rem 1rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none; }
+    .nav-buttons-container a:hover {
+      background-color: #652319;
+      cursor: pointer; }
+
+.nav-container-left {
+  float: left;
+  width: 50%; }
+
+.nav-container-right {
+  float: right;
+  width: 50%;
+  text-align: right; }
+
+.wrapper {
+  padding-top: 2rem; }
+
+.home-page-container {
+  display: inline-block;
+  height: 300px; }
+
+.big-picture {
+  width: 100%;
+  padding-bottom: 2rem; }
+
+.big-picture-pizza {
+  width: 100%;
+  opacity: 0.6; }
+
+.pizza-image {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: relative;
+  background-color: #783702;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden; }
+  .pizza-image:hover {
+    cursor: pointer; }
+  .pizza-image a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400; }
+    .pizza-image a:hover {
+      color: #529843; }
+
+.welcoming-messege {
+  z-index: 2;
+  padding: 0 0 2rem 4rem;
+  display: inline-block;
+  position: relative; }
+  .welcoming-messege h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto; }
+    .welcoming-messege h1 sup {
+      top: -1.8rem; }
+
+.to-go-box {
+  z-index: 2;
+  padding: 1rem;
+  margin-top: 0;
+  display: inline-block;
+  position: relative;
+  background-color: #dd6503;
+  margin-left: 8rem;
+  border-sizing: border-box;
+  border-radius: 20px; }
+  .to-go-boxhover {
+    cursor: pointer; }
+  .to-go-box h2 {
+    z-index: 2;
+    text-align: right;
+    margin: 0 auto;
+    line-height: 40px; }
+  .to-go-box .fa-long-arrow-right {
+    z-index: 3;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 1rem; }
+
+.text-20 {
+  font-size: 20px; }
+
+.text-28 {
+  font-size: 28px; }
+
+.text-35 {
+  font-size: 35px; }
+
+.text-45 {
+  font-size: 45px;
+  padding-top: -10px; }
+
+.text-55 {
+  font-size: 55px; }
+
+.text-80 {
+  font-size: 80px;
+  line-height: 20px; }
+
+.text-100 {
+  font-size: 100px;
+  line-height: 70px; }
+
+.sicilian-mondays, .queen-of-pies, .our-photos, .our-events {
+  float: left;
+  padding-top: 3rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center; }
+
+.big-picture-pizza, .sicilian-image, .queen-of-pies-image {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0 auto; }
+
+.sicilian-mondays h3, .queen-of-pies h3, .our-photos h3, .our-events h3 {
+  z-index: 2;
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0 auto;
+  position: relative; }
+
+.sicilian-mondays h2, .queen-of-pies h2, .our-photos h2, .our-events h2 {
+  z-index: 2;
+  font-size: 55px;
+  line-height: 1;
+  margin: 0 auto;
+  position: relative;
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px #d30300;
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  color: #e9f898;
+  text-shadow: 3px 3px 0 #d30300, -1px -1px 0 #d30300, 1px -1px 0 #d30300, -1px 1px 0 #d30300, 1px 1px 0 #d30300; }
+
+.row {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #529843; }
+
+.sicilian-mondays {
+  background-color: #a00200; }
+  .sicilian-mondays h3 {
+    padding-top: 2rem; }
+
+.sicilian-image {
+  opacity: 0.5; }
+
+.queen-of-pies {
+  background-color: #3f7533; }
+  .queen-of-pies h3 {
+    margin-left: -6rem;
+    padding-top: 3.5rem; }
+  .queen-of-pies h2 {
+    font-style: italic; }
+
+.queen-of-pies-image {
+  height: 100%; }
+
+.our-photos {
+  background-color: #d30300; }
+  .our-photos h3 {
+    padding-top: 4rem; }
+
+.our-events {
+  background-color: #529843; }
+  .our-events h3 {
+    padding-top: 4rem; }
+
+.menu-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 2rem auto;
+  background-color: #e9f898;
+  overflow: hidden;
+  border-sizing: border-box;
+  border: 20px solid #d30300;
+  border-radius: 20px;
+  line-height: 1.4; }
+  .menu-container h1 {
+    font-family: "ff-more-web-pro-condensed";
+    text-align: center;
+    margin-bottom: 2rem; }
+  .menu-container h2 {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: "ff-more-web-pro-condensed"; }
+
+.menu-pizza, .menu-booze, .menu-salads-antipasta, .menu-desserts-drinks {
+  width: 100%;
+  overflow: hidden; }
+
+.menu-booze h2 {
+  text-align: center; }
+.menu-booze h3 {
+  text-align: center; }
+
+@media (min-width: 0px) {
+  .pizza-toppings {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+
+  .tried-and-true {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .tried-and-true h3 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px; }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
+      font-weight: 400; }
+
+  .desserts, .beverages {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem; }
+    .desserts h3, .beverages h3 {
+      font-weight: 400; }
+    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+      text-align: center; } }
+@media (min-width: 600px) {
+  .pizza-toppings {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+
+  .tried-and-true {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .tried-and-true h3 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px; }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
+      font-weight: 400; }
+
+  .desserts, .beverages {
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden; }
+    .desserts h3, .beverages h3 {
+      font-weight: 400; }
+    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+      text-align: center; } }
+.row-food {
+  width: 90%;
+  overflow: hidden; }
+
+.food-option {
+  float: left;
+  margin: 0; }
+
+.tried-menu-container {
+  width: 300px;
+  margin: 0 auto; }
+  .tried-menu-container .fa-circle {
+    padding: 0 5px 5px 0; }
+
+.menu-italic {
+  font-style: italic;
+  font-size: 1rem; }
+
+.food-price {
+  float: right;
+  font-style: italic;
+  margin: 0 auto 0.5rem; }
+
+.food-extra-info {
+  float: left;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.menu-food-info-bold {
+  font-weight: 700; }
+
+footer {
+  padding-bottom: 2rem;
+  background-color: #252525;
+  clear: both;
+  color: white; }
+  footer a {
+    color: #e9f898; }
+
+.foot-maillist, .foot-copyright-info {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px; }

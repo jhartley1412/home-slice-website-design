@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <!--This include tag adds /_includes/head.html to every page that has layout: default in the front matter -->
+
+  {% include head.html %}
+
+  <body>
+    
+    <!--This include tag adds /_includes/header.html to every page that has layout: default in the front matter -->
+    {% include header.html %}
+
+      <div class="wrapper col-md-15">
+        <!--Any content underneath the front matter in a page that has layout: default will be inserted here
+         -->
+
+         {{ content }}
+        
+        
+
+      </div>
+    
+    <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
+    {% include footer.html %}
+
+  </body>
+
+</html>
