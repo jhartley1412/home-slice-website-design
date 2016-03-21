@@ -148,16 +148,35 @@ nav{
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
-  padding: 1.5rem;
-  background-color: $brand-color2;
+  padding: 2.5rem;
+  color: white;
   
   h1, h2{
     text-align: center;
+    margin: 0;
   }
   
   h2{
     font-family: "ff-more-web-pro-condensed";
     font-style: italic;
+  }
+
+  p{
+    line-height: 1.4;
+  }
+}
+
+.hours-location{
+  box-sizing: border-box;
+
+  p{
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .address{
+    font-style: italic;
+    text-align: center;
   }
 }
 

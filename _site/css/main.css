@@ -186,13 +186,25 @@ nav {
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
-  padding: 1.5rem;
-  background-color: #529843; }
+  padding: 2.5rem;
+  color: white; }
   .about-us-info h1, .about-us-info h2 {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .about-us-info h2 {
     font-family: "ff-more-web-pro-condensed";
     font-style: italic; }
+  .about-us-info p {
+    line-height: 1.4; }
+
+.hours-location {
+  box-sizing: border-box; }
+  .hours-location p {
+    margin: 0;
+    line-height: 1.7; }
+  .hours-location .address {
+    font-style: italic;
+    text-align: center; }
 
 .welcoming-message {
   width: 60%;
