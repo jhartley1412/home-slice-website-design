@@ -32,11 +32,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
     margin-bottom: 1rem;
   }
 
-  .hours-location{
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15{
     width: 100%;
     margin-right: $gut-width;
@@ -60,11 +55,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
     width: 100%;
   }
 
-  .about-us-info, .hours-location{
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-  }
 }
 
 
@@ -82,17 +72,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 
   .logo{
     width: 100%;
-  }
-
-  .hours-location{
-    width: 25%;
-    float: left;
-    padding: 2.5rem;
-  }
-
-  .about-us-info{
-    width: 75%;
-    float: left;
   }
 
   

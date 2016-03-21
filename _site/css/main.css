@@ -8,7 +8,9 @@
     margin-bottom: -20px; }
 
   .logo {
-    width: 100%; }
+    width: 100%;
+    top: 0;
+    margin-bottom: 1rem; }
 
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
     width: 100%;
@@ -23,12 +25,7 @@
     margin-bottom: -90px; }
 
   .logo {
-    width: 100%; }
-
-  .about-us-info, .welcoming-message {
-    width: 100%;
-    margin: 0 auto;
-    float: none; } }
+    width: 100%; } }
 @media (min-width: 900px) {
   .logo-container {
     z-index: 2;
@@ -40,14 +37,6 @@
 
   .logo {
     width: 100%; }
-
-  .about-us-info {
-    width: 40%;
-    float: left; }
-
-  .welcoming-message {
-    width: 60%;
-    float: left; }
 
   .col-md-1 {
     width: 6.66666666667%;
@@ -153,6 +142,9 @@ nav {
   width: 50%;
   text-align: right; }
 
+.bold-text {
+  font-weight: bold; }
+
 .wrapper {
   padding-top: 2rem; }
 
@@ -168,19 +160,12 @@ nav {
   z-index: 2;
   width: 100%;
   max-width: 1200px;
+  min-height: 500px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
   background-color: #6d0200; }
-  .front-page-welcome:hover {
-    cursor: pointer; }
-  .front-page-welcome a {
-    text-decoration: none;
-    color: white;
-    font-weight: 400; }
-    .front-page-welcome a:hover {
-      color: #529843; }
   @media (min-width: 0) {
     .front-page-welcome {
       border-radius: 0; } }
@@ -188,85 +173,100 @@ nav {
     .front-page-welcome {
       border-radius: 20px; } }
 
-.front-page-welcome-bg-img {
-  z-index: 1;
-  width: 100%;
-  left: 40%;
-  position: absolute;
-  opacity: 0.6; }
+.hours-location {
+  z-index: 2;
+  max-width: 300px;
+  overflow: hidden;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  color: white; }
+  .hours-location h1 {
+    font-size: 18px;
+    text-align: center; }
+  .hours-location p {
+    margin: 0;
+    line-height: 2;
+    font-size: 15px; }
+  .hours-location .address {
+    font-style: italic;
+    text-align: center; }
+  @media (min-width: 0) {
+    .hours-location {
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 600px) {
+    .hours-location {
+      padding: 1rem; } }
+  @media (min-width: 900px) {
+    .hours-location {
+      width: 25%;
+      float: left;
+      padding: 2.5rem; } }
 
 .about-us-info {
   z-index: 2;
-  max-width: 480px;
+  max-width: 900px;
+  min-height: 500px;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
   padding: 2.5rem;
   color: white;
-  background-color: #6d0200; }
+  position: relative; }
   .about-us-info h1, .about-us-info h2 {
     text-align: center;
-    margin: 0; }
+    margin: 0 auto 1rem auto;
+    line-height: 1.4; }
   .about-us-info h2 {
     font-family: "ff-more-web-pro-condensed";
-    font-style: italic; }
-  .about-us-info p {
-    line-height: 1.4; }
-
-.hours-location {
-  box-sizing: border-box; }
-  .hours-location p {
-    margin: 0;
-    line-height: 1.7; }
-  .hours-location .address {
     font-style: italic;
-    text-align: center; }
+    font-size: 18px; }
+  @media (min-width: 0) {
+    .about-us-info {
+      margin: 0 auto; } }
+  @media (min-width: 600px) {
+    .about-us-info {
+      padding: 1rem; } }
+  @media (min-width: 900px) {
+    .about-us-info {
+      width: 75%;
+      float: left;
+      padding: 2.5rem;
+      padding-bottom: 3rem; } }
 
-.welcoming-message {
+.about-us-text {
   z-index: 2;
-  max-width: 720px;
-  padding: 3rem 0;
-  overflow: hidden;
-  position: relative; }
-
-.welcoming-messege-tagline {
-  z-index: 2;
-  padding: 0 0 2rem 4rem;
-  margin-top: 10%;
-  display: inline-block;
-  position: relative; }
-  .welcoming-messege-tagline h1 {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-    margin: 0 auto; }
-    .welcoming-messege-tagline h1 sup {
-      top: -1.8rem; }
-
-.to-go-box {
-  z-index: 2;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  display: inline-block;
+  margin: 0 auto;
+  line-height: 2;
   position: relative;
-  background-color: #dd6503;
-  margin-left: 8rem;
-  border-sizing: border-box;
-  border-radius: 20px; }
-  .to-go-boxhover {
-    cursor: pointer;
-    background-color: #ab4e02; }
-  .to-go-box h2 {
-    z-index: 2;
-    text-align: right;
-    margin: 0 auto;
-    line-height: 40px; }
-  .to-go-box .fa-long-arrow-right {
-    z-index: 3;
-    position: absolute;
-    margin-top: 3rem;
-    margin-left: 1rem; }
+  overflow: hidden; }
+  @media (min-width: 0) {
+    .about-us-text {
+      font-size: 16px;
+      padding: 0;
+      width: 95%; }
+      .about-us-text h1 {
+        font-size: 26px; } }
+  @media (min-width: 600px) {
+    .about-us-text {
+      font-size: 18px;
+      padding: 2rem 0;
+      width: 60%; }
+      .about-us-text h1 {
+        font-size: 30px; } }
+
+.about-us-bg-img {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.6; }
+  @media (min-width: 0) {
+    .about-us-bg-img {
+      height: 100%; } }
+  @media (min-width: 600px) {
+    .about-us-bg-img {
+      height: 800px; } }
 
 .text-20 {
   font-size: 20px; }

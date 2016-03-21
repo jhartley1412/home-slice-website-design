@@ -2,8 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'breakpoints';
-
+@import 'col-breakpoints';
+// breakpoints @ 0, 600, 900
 
 // http://localhost:4000/
 
@@ -82,7 +82,9 @@ nav{
 }
 
 
-
+.bold-text{
+  font-weight: bold;
+}
 
 
 // wrapper - main middle content
@@ -105,25 +107,12 @@ nav{
   z-index: 2;
   width: 100%;
   max-width: 1200px;
+  min-height: 500px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
   background-color: darken($brand-color1, 20%);
-
-  &:hover{
-    cursor: pointer;
-  }
-
-  a{
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-
-    &:hover{
-      color: #529843;
-    }
-  }
   
   // when div reaches max-width, the borderes are rounded
   @media (min-width: 0){
@@ -135,112 +124,132 @@ nav{
   }
 }
 
-.front-page-welcome-bg-img{
-  z-index: 1;
-  width: 100%;
-  left: 40%;
-  position: absolute;
-  opacity: 0.6;
-}
 
-.about-us-info{
+.hours-location{
   z-index: 2;
-  max-width: 480px;
+  max-width: 300px;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
-  padding: 2.5rem;
   color: white;
-  background-color: darken($brand-color1, 20%);
   
-  h1, h2{
+  h1{
+    font-size: 18px;
     text-align: center;
-    margin: 0;
-  }
-  
-  h2{
-    font-family: "ff-more-web-pro-condensed";
-    font-style: italic;
   }
 
   p{
-    line-height: 1.4;
-  }
-}
-
-.hours-location{
-  box-sizing: border-box;
-
-  p{
     margin: 0;
-    line-height: 1.7;
+    line-height: 2;
+    font-size: 15px;
   }
 
   .address{
     font-style: italic;
     text-align: center;
   }
-}
 
-
-.welcoming-message{
-  z-index: 2;
-  max-width: 720px;
-  padding: 3rem 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.welcoming-messege-tagline{
-  z-index: 2;
-  padding: 0 0 2rem 4rem;
-  margin-top: 10%;
-  display: inline-block;
-  position: relative;
-
-  h1{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
+  @media (min-width: 0){
+    width: 90%;
     margin: 0 auto;
+  }
 
-    sup{
-      top: -1.8rem;
+   @media (min-width: 600px){
+    padding: 1rem;
+    
+  }
+
+   @media (min-width: 900px){
+    width: 25%;
+    float: left;
+    padding: 2.5rem;
+  }
+  
+}
+
+.about-us-info{
+  z-index: 2;
+  max-width: 900px;
+  min-height: 500px;
+  overflow: hidden;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  color: white;
+  position: relative;
+
+  h1, h2{
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    line-height: 1.4;
+  }
+  
+  h2{
+    font-family: "ff-more-web-pro-condensed";
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  @media (min-width: 0){
+    margin: 0 auto;
+  }
+
+   @media (min-width: 600px){
+    padding: 1rem;
+  }
+
+   @media (min-width: 900px){
+    width: 75%;
+    float: left;
+    padding: 2.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.about-us-text{
+  z-index: 2;
+  margin: 0 auto;
+  line-height: 2;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 0){
+    font-size: 16px;
+    padding: 0;
+    width: 95%;
+
+    h1{
+      font-size: 26px;
+    }
+  }
+
+  @media (min-width: 600px){
+    font-size: 18px;
+    padding: 2rem 0;
+    width: 60%;
+
+    h1{
+      font-size: 30px;
     }
   }
 }
 
-.to-go-box{
-  z-index: 2;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  display: inline-block;
-  position: relative;
-  background-color: $brand-color3;
-  margin-left: 8rem;
-  border-sizing: border-box;
-  border-radius: 20px;
+.about-us-bg-img{
+  z-index: 1;
+  top: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.6;
 
-  &hover{
-    cursor: pointer;
-    background-color: darken($brand-color3, 10%);
+  @media (min-width: 0){
+    height: 100%;
   }
 
-  h2{
-    z-index: 2;
-    text-align: right;
-    margin: 0 auto;
-    line-height: 40px;
-  }
-
-  .fa-long-arrow-right{
-    z-index: 3;
-    position: absolute;
-    margin-top: 3rem;
-    margin-left: 1rem;
+  @media (min-width: 600px){
+    height: 800px;
   }
 }
+
 
 
 // different font sizes
