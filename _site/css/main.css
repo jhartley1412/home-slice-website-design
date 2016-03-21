@@ -23,7 +23,12 @@
     margin-bottom: -90px; }
 
   .logo {
-    width: 100%; } }
+    width: 100%; }
+
+  .about-us-info, .welcoming-message {
+    width: 100%;
+    margin: 0 auto;
+    float: none; } }
 @media (min-width: 900px) {
   .logo-container {
     z-index: 2;
@@ -35,6 +40,14 @@
 
   .logo {
     width: 100%; }
+
+  .about-us-info {
+    width: 40%;
+    float: left; }
+
+  .welcoming-message {
+    width: 60%;
+    float: left; }
 
   .col-md-1 {
     width: 6.66666666667%;
@@ -151,18 +164,15 @@ nav {
   width: 100%;
   padding-bottom: 2rem; }
 
-.big-picture-pizza {
-  width: 900px;
-  opacity: 0.6; }
-
 .front-page-welcome {
+  z-index: 2;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  background-color: #6d0200;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #6d0200; }
   .front-page-welcome:hover {
     cursor: pointer; }
   .front-page-welcome a {
@@ -178,16 +188,22 @@ nav {
     .front-page-welcome {
       border-radius: 20px; } }
 
+.front-page-welcome-bg-img {
+  z-index: 1;
+  width: 100%;
+  left: 40%;
+  position: absolute;
+  opacity: 0.6; }
+
 .about-us-info {
   z-index: 2;
-  width: 40%;
   max-width: 480px;
-  float: left;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
   padding: 2.5rem;
-  color: white; }
+  color: white;
+  background-color: #6d0200; }
   .about-us-info h1, .about-us-info h2 {
     text-align: center;
     margin: 0; }
@@ -207,17 +223,16 @@ nav {
     text-align: center; }
 
 .welcoming-message {
-  width: 60%;
+  z-index: 2;
   max-width: 720px;
-  height: 100%;
-  float: left;
-  background-color: #252525;
+  padding: 3rem 0;
   overflow: hidden;
   position: relative; }
 
 .welcoming-messege-tagline {
   z-index: 2;
   padding: 0 0 2rem 4rem;
+  margin-top: 10%;
   display: inline-block;
   position: relative; }
   .welcoming-messege-tagline h1 {
@@ -232,7 +247,7 @@ nav {
 .to-go-box {
   z-index: 2;
   padding: 1rem;
-  margin-top: 0;
+  padding-bottom: 2rem;
   display: inline-block;
   position: relative;
   background-color: #dd6503;
@@ -285,7 +300,7 @@ nav {
   overflow: hidden;
   text-align: center; }
 
-.big-picture-pizza, .sicilian-image, .queen-of-pies-image {
+.sicilian-image, .queen-of-pies-image {
   z-index: 1;
   position: absolute;
   top: 0;

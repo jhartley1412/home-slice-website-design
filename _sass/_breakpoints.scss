@@ -52,6 +52,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
   .logo{
     width: 100%;
   }
+
+  .about-us-info, .welcoming-message{
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 
@@ -70,6 +76,17 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
   .logo{
     width: 100%;
   }
+
+  .about-us-info{
+    width: 40%;
+    float: left;
+  }
+
+  .welcoming-message{
+    width: 60%;
+    float: left;
+  }
+
   
   .col-md-1{
     width: 6.66666666667%;

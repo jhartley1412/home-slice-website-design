@@ -101,20 +101,15 @@ nav{
   padding-bottom: 2rem;
 }
 
-.big-picture-pizza{
-  @extend %front-page-background-image;
-  width: 900px;
-  opacity: 0.6;
-}
-
 .front-page-welcome{
+  z-index: 2;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  background-color: darken($brand-color1, 20%);
   box-sizing: border-box;
   overflow: hidden;
+  background-color: darken($brand-color1, 20%);
 
   &:hover{
     cursor: pointer;
@@ -140,16 +135,23 @@ nav{
   }
 }
 
+.front-page-welcome-bg-img{
+  z-index: 1;
+  width: 100%;
+  left: 40%;
+  position: absolute;
+  opacity: 0.6;
+}
+
 .about-us-info{
   z-index: 2;
-  width: 40%;
   max-width: 480px;
-  float: left;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
   padding: 2.5rem;
   color: white;
+  background-color: darken($brand-color1, 20%);
   
   h1, h2{
     text-align: center;
@@ -182,11 +184,9 @@ nav{
 
 
 .welcoming-message{
-  width: 60%;
+  z-index: 2;
   max-width: 720px;
-  height: 100%;
-  float: left;
-  background-color: $brand-color5;
+  padding: 3rem 0;
   overflow: hidden;
   position: relative;
 }
@@ -194,6 +194,7 @@ nav{
 .welcoming-messege-tagline{
   z-index: 2;
   padding: 0 0 2rem 4rem;
+  margin-top: 10%;
   display: inline-block;
   position: relative;
 
@@ -213,7 +214,7 @@ nav{
 .to-go-box{
   z-index: 2;
   padding: 1rem;
-  margin-top: 0;
+  padding-bottom: 2rem;
   display: inline-block;
   position: relative;
   background-color: $brand-color3;
