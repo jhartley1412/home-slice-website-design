@@ -29,24 +29,26 @@
     <!--This include tag adds /_includes/header.html to every page that has layout: default in the front matter -->
     <header class="site-header">
 
-	<div class="logo-and-tagline">
+	<div class="logo-container">
 		<a href="#"> <img class="logo" src="../site-images/logo.gif"> </a>
-
-		<p class="tagline"> Authentic NY Style Pizza <br> by the slice or the pie </p>
 	</div>
 
 	<nav class="col-md-15">
 
 		<div class="nav-buttons-container col-md-5">
-			<a href="#"> Home </a>
+			
+			<div class="nav-container-left">
+				<a href="#"> Home </a>
 
-			<a href="#"> Menu </a>
+				<a href="menu-page.html"> Menu </a>
+			</div>
+			
 
-			<a href="#"> About Us </a>
+			<div class="nav-container-right">
+				<a href="#"> Jobs </a>
 
-			<a href="#"> Jobs </a>
-
-			<a href="#"> Store </a>
+				<a href="#"> Store </a>
+			</div>
 		</div>
 
 	</nav>
@@ -60,117 +62,112 @@
 
       <div class="wrapper col-md-15">
         <!--Any content underneath the front matter in a page that has layout: default will be inserted here
-        <div>
+         -->
 
-  <h1>Posts</h1>
+         <div class="big-picture col-sm-1 col-md-15">
 
-  <ul>
-    
-  </ul>
+  <a href="#">  <div class="pizza-image">
+
+    <!-- welcome messege -->
+    <div class="welcoming-messege"> 
+      <h1> 
+        <span class="text-55"> Come and </span>
+        <br>
+        <span class="text-80"> join us </span>
+        <br> 
+        <span class="text-45"> <sup> for a </sup> </span> 
+        <span class="text-100"> slice </span> 
+      </h1>
+    </div>
+
+    <br>
+
+    <!-- to go box -->
+    <a href="#">  <div class="to-go-box">
+
+      <i class="fa fa-long-arrow-right fa-4x"></i>
+
+      <h2> 
+        <span class="text-20"> ...or </span>
+        <span class="text-45"> take it </span>
+        <br> 
+        <span class="text-20"> to </span> 
+        <span class="text-45"> go! </span>
+      </h2>
+
+    </div>  </a>
+
+  
+    <img class="big-picture-pizza" src="../site-images/big-picture.png">
+
+  </div> </a>
 
 </div>
- -->
+
+<!-- END OF BIG PICTURE DIV -->
+
+
+<!-- START OF ROW 1 DIV -->
+
+<div class="row row-1 col-md-15">
+
+  <a href="#">  <div class="sicilian-mondays home-page-container col-sm-1 col-md-8">
+
+    <h3> Check out our </h3>
+
+    <h2> 
+      <span class="text-35"> Sicilian Pizza </span>
+      <br> 
+      Mondays
+    </h2>
+
+    <img class="sicilian-image" src="../site-images/scicilian-mondays.png">
+
+  </div>  </a>
+
+
+
+  <a href="#">  <div class="queen-of-pies home-page-container col-sm-1 col-md-7">
+
+    <h3> Meet the </h3>
+
+    <h2> Queen of Pies </h2>
+
+    <img class="queen-of-pies-image" src="../site-images/Queen-of-pies-lg.png">
+
+  </div>  </a>
+
+</div>
+<!-- END OF ROW 1 DIV -->
+
+
+
+<!-- START OF ROW 2 DIV -->
+
+<div class="row row-2 col-md-15">
+
+  <div class="our-photos home-page-container col-sm-1 col-md-4">
+
+  <h3> See our </h3>
+
+  <h2> Photos </h2>
+
+  </div>
+
+  <div class="our-events home-page-container col-sm-1 col-md-11">
+
+  <h3> Join one of our upcoming </h3>
+
+  <h2> Events </h2>
+
+  </div>
+
+</div>
+<!-- END OF ROW 2 DIV -->
+
+
         
-        <div class="big-picture col-sm-1 col-md-15">
-
-          <a href="#"> 
-          <div class="pizza-image">
-
-            <!-- welcome messege -->
-            <div class="welcoming-messege"> 
-
-              <h1> 
-                <span class="text-55"> Come and </span>
-                <br>
-                <span class="text-80"> join us </span>
-                <br> 
-                <span class="text-45"> <sup> for a </sup> </span> 
-                <span class="text-100"> slice </span> 
-              </h1>
-
-            </div>
-
-            <br>
-            
-            <!-- to go box -->
-            <a href="#"> 
-            <div class="to-go-box">
-
-              <i class="fa fa-long-arrow-right fa-4x"></i>
-              
-              <h2> 
-                <span class="text-20"> ...or </span>
-                <span class="text-45"> take it </span>
-                <br> 
-                <span class="text-20"> to </span> 
-                <span class="text-45"> go! </span>
-              </h2>
-
-            </div> 
-            </a>
-
-            <img class="big-picture-pizza" src="../site-images/big-picture.png">
-
-          </div>
-          </a>
-
-        </div>
-  
-
-
-
-        <div class="row row-1 col-md-15">
-
-          <a href="#"> 
-            <div class="sicilian-mondays home-page-container col-sm-1 col-md-8">
-
-              <h3> Check out our </h3>
-
-              <h2> 
-                <span class="text-35"> Sicilian Pizza </span>
-                <br> 
-                Mondays
-              </h2>
-
-              <!-- <img class="sicilian-image" src="../site-images/scicilian-mondays.png"> -->
-
-            </div>
-          </a>
-
-          <a href="#"> 
-            <div class="queen-of-pies home-page-container col-sm-1 col-md-7">
-
-              <h3> Meet the </h3>
-              
-              <h2> Queen of Pies </h2>
-
-              <!-- <img class="queen-of-pies-image" src="../site-images/queen-of-pies.svg"> -->
-
-          </div>
-        </a>
-
-        </div>
-
-
-        <div class="row row-2 col-md-15">
-
-            <div class="our-photos home-page-container col-sm-1 col-md-4">
-              
-              <h3> See our </h3>
-
-              <h2> Photos </h2>
-
-            </div>
-
-            <div class="our-events home-page-container col-sm-1 col-md-11">
-              
-              <h3> Join one of our upcoming </h3>
-
-              <h2> Events </h2>
-
-            </div>
-
-        </div>
+        
 
       </div>
     

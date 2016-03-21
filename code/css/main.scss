@@ -2,12 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+//@import 'breakpoints';
 
 $brand-color1: #d30300; //red
 $brand-color2: #529843; //green
 $brand-color3: #dd6503; //orange
 $brand-color4: #e9f898; //yellow
 $brand-color5: #252525; //grey
+
 
 
 // breakpoints
@@ -28,6 +30,20 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 
 @media (min-width: 0){
 
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -20px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
+
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15{
     width: 100%;
     margin-right: $gut-width;
@@ -35,8 +51,39 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
   
 }
 
+@media (min-width: 600px){
+  
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
+}
+
 
 @media (min-width: 900px){
+
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
   
   .col-md-1{
     width: 6.66666666667%;
@@ -117,10 +164,11 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 
 
 
+
+
 body{
 	font-family: "ff-tisa-sans-web-pro";
 	line-height: 2;
-  background-color: $brand-color5;
 
   a{
     &:hover{
@@ -133,49 +181,33 @@ body{
 // header - nav bar
 
 header{
-	margin: 2rem auto;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 nav{
   z-index: 1;
 	background-color: $brand-color1;
 	width: 100%;
-	height: 80px;
+  float: left;
   font-family: "ff-more-web-pro-condensed", serif;
   font-size: 30px;
+  position: relative;
+
+  border-bottom: 25px solid $brand-color2;
 }
 
-.logo-and-tagline{
-  z-index: 2;
-  position: absolute;
-  margin-top: -1rem;
-  margin-left: 3rem;
-}
-
-.logo{
-  width: 184px;
-}
-
-.tagline{
-  color: white;
-  float: right;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  font-family: "ff-more-web-pro-condensed", serif;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 1.6;
-}
 
 .nav-buttons-container{
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   height: 100%;
   margin: 0 auto;
   padding-top: 0.7rem;
+  overflow: hidden;
   
   a{
-    padding: 0.6rem 1rem 0.4rem 1rem;
+    padding: 0.6rem 1.1rem 0.4rem 1rem;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -188,29 +220,26 @@ nav{
 
 }
 
-.hours-container{
-	background-color: $brand-color2;
-	width: 100%;
-	height: 15px;
-  text-align: center;
-  
-  a{
-    color: white;
-    text-decoration: none;
-    margin-right: 3rem;
-    border-radius: 10px;
+.nav-container-left{
+  float: left; 
+  width: 50%;
+}
 
-    &:hover{
-      background-color: #468238;
-    }
-  }
-
+.nav-container-right{
+  float: right;
+  width: 50%;
+  text-align: right;
 }
 
 
 
 
+
 // wrapper - main middle content
+
+.wrapper{
+  margin-top: 2rem;
+}
 
 .home-page-container{
 	display: inline-block;
@@ -222,13 +251,20 @@ nav{
   padding-bottom: 2rem;
 }
 
-.pizza-image{
+.big-picture-pizza{
+  @extend %front-page-background-image;
   width: 100%;
   max-width: 960px;
+  opacity: 0.6;
+}
+
+.pizza-image{
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 5rem 0;
   position: relative;
-  background-color: darken($brand-color3, 25%);
+  background-color: darken($brand-color3, 20%);
   box-sizing: border-box;
   border-radius: 20px;
   overflow: hidden;
@@ -298,6 +334,9 @@ nav{
   }
 }
 
+
+// different font sizes
+
 .text-20{
   font-size: 20px;
 }
@@ -330,12 +369,7 @@ nav{
 }
 
 
-.big-picture-pizza{
-  @extend %front-page-bg-image;
-  height: 100%;
-  max-width: 960px;
-  opacity: 0.6;
-}
+
 
 
 %front-page-image-container{
@@ -347,7 +381,7 @@ nav{
   text-align: center;
 }
 
-%front-page-bg-image{
+%front-page-background-image{
   z-index: 1;
   position: absolute;
   top: 0;
@@ -362,18 +396,39 @@ nav{
   font-size: 28px;
   line-height: 1;
   margin: 0 auto;
+  position: relative;
 }
 
 %front-page-h2{
   z-index: 2;
-  color: $brand-color4;
   font-size: 55px;
   line-height: 1;
   margin: 0 auto;
+  position:relative;
+
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px $brand-color1;
+  
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  
+  color: $brand-color4;
+
+  text-shadow:
+    3px 3px 0 $brand-color1,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 $brand-color1,  
+    1px -1px 0 $brand-color1,
+   -1px  1px 0 $brand-color1,
+    1px  1px 0 $brand-color1;
 }
 
 .row{
   width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   overflow: hidden;
 
   background-color: $brand-color2;
@@ -396,7 +451,8 @@ nav{
 }
 
 .sicilian-image{
-  @extend %front-page-bg-image;
+  @extend %front-page-background-image;
+  opacity: 0.5;
 }
 
 .queen-of-pies{
@@ -418,8 +474,9 @@ nav{
 }
 
 .queen-of-pies-image{
-  @extend %front-page-bg-image;
-
+  @extend %front-page-background-image;
+  
+  height: 100%;
 }
 
 .our-photos{
@@ -429,7 +486,7 @@ nav{
 
   h3{
     @extend %front-page-h3;
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
   h2{
@@ -444,7 +501,7 @@ nav{
 
   h3{
     @extend %front-page-h3;
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
   h2{
@@ -452,6 +509,96 @@ nav{
   }
 	
 }
+
+
+
+
+
+
+
+
+// Menu Page
+
+.menu-container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: $brand-color4;
+  overflow: hidden;
+
+  line-height: 1.4;
+}
+
+%menu-sections{
+  width: 40%;
+  margin: auto 5%;
+  float: left;
+  overflow: hidden;
+
+  h2{
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: "ff-more-web-pro-condensed";
+  }
+}
+
+.menu-pizza{
+  width: 100%;
+  overflow: hidden;
+}
+
+.pizza-toppings{
+  @extend %menu-sections;
+}
+
+.tried-and-true{
+  @extend %menu-sections;
+
+  h3{
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.row-food{
+  width: 90%;
+  overflow: hidden;
+}
+
+.food-option{
+  float: left;
+  margin: 0;
+}
+
+.tried-menu-container{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.food-price{
+  float: right;
+  font-style: italic;
+  padding-right: 2rem;
+  margin: 0 auto 0.5rem;
+}
+
+.food-extra-info{
+  float: left;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
@@ -479,6 +626,7 @@ footer{
 .foot-maillist, .foot-copyright-info{
 	@extend %foot-divs;
 }
+
 
 
 
