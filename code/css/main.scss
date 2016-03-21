@@ -169,6 +169,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 body{
 	font-family: "ff-tisa-sans-web-pro";
 	line-height: 2;
+ // background-color: $brand-color5;
 
   a{
     &:hover{
@@ -238,7 +239,7 @@ nav{
 // wrapper - main middle content
 
 .wrapper{
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .home-page-container{
