@@ -1,0 +1,149 @@
+
+$tot-width: 100%;
+$num-col: 15;
+$gut-width: 0;
+
+
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remember PEMAS //ALWAYS HAVE SPACE between $var - #
+
+         // col-within = # of columns within element
+@mixin grid($col-within){
+  width: ($col-within * $ind-col-width) + ($gut-width *($col-within - 1 ));
+}
+
+
+
+@media (min-width: 0){
+
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -20px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15{
+    width: 100%;
+    margin-right: $gut-width;
+  }
+  
+}
+
+@media (min-width: 600px){
+  
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 900px){
+
+  .logo-container{
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px;
+
+  }
+
+  .logo{
+    width: 100%;
+  }
+  
+  .col-md-1{
+    width: 6.66666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-2{
+    width: 13.3333333333%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-3{
+    width: 20%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-4{
+    width: 26.6666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-5{
+    width: 33.3333333333%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-6{
+    width: 40%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-7{
+    width: 46.6666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-8{
+    width: 53.3333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-9{
+    width: 60%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-10{
+    width: 66.6666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-11{
+    width: 73.3333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-12{
+    width: 80%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-13{
+    width: 86.6666666667%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-14{
+    width: 93.3333333334%;
+    margin-right: $gut-width;
+  }
+
+  .col-md-15{
+    width: 100%;
+    margin-right: $gut-width;
+  }
+  
+}
