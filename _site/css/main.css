@@ -169,36 +169,6 @@ nav {
     .front-page-welcome {
       border-radius: 20px; } }
 
-.hours-location {
-  z-index: 2;
-  max-width: 300px;
-  overflow: hidden;
-  padding-top: 2rem;
-  box-sizing: border-box;
-  color: white; }
-  .hours-location h1 {
-    font-size: 18px;
-    text-align: center; }
-  .hours-location p {
-    margin: 0;
-    line-height: 2;
-    font-size: 15px; }
-  .hours-location .address {
-    font-style: italic;
-    text-align: center; }
-  @media (min-width: 0) {
-    .hours-location {
-      width: 90%;
-      margin: 0 auto; } }
-  @media (min-width: 600px) {
-    .hours-location {
-      padding: 1rem; } }
-  @media (min-width: 900px) {
-    .hours-location {
-      width: 25%;
-      float: left;
-      padding: 2.5rem; } }
-
 .about-us-info {
   z-index: 2;
   max-width: 900px;
@@ -265,7 +235,7 @@ nav {
     .about-us-bg-img {
       height: 800px; } }
 
-.sicilian-mondays, .queen-of-pies, .our-photos, .our-events {
+.queen-of-pies, .our-photos, .our-events {
   float: left;
   padding-top: 3rem;
   position: relative;
@@ -273,7 +243,7 @@ nav {
   overflow: hidden;
   text-align: center; }
 
-.sicilian-image, .queen-of-pies-image {
+.queen-of-pies-image {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -303,21 +273,108 @@ nav {
   color: #e9f898;
   text-shadow: 3px 3px 0 #d30300, -1px -1px 0 #d30300, 1px -1px 0 #d30300, -1px 1px 0 #d30300, 1px 1px 0 #d30300; }
 
+.add-info {
+  width: 100%;
+  overflow: hidden;
+  background-color: lightblue; }
+
+.add-info-content {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #e9f898; }
+
+.hours-location {
+  float: left;
+  background-color: red; }
+
 .row {
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  border-top: 25px solid #d30300;
+  border-top: 10px solid #d30300;
   background-color: #6d0200;
   margin-bottom: 3rem; }
 
+.row-1-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #e9f898;
+  overflow: hidden; }
+  @media (min-width: 600px) {
+    .row-1-container {
+      padding: 0 2rem; } }
+  @media (min-width: 900px) {
+    .row-1-container {
+      padding: 0 5rem; } }
+
+.hours-location {
+  z-index: 2;
+  max-width: 480px;
+  overflow: hidden;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  color: white; }
+  .hours-location h1 {
+    font-size: 18px;
+    text-align: center; }
+  .hours-location p {
+    margin: 0;
+    line-height: 2;
+    font-size: 15px; }
+  .hours-location .address {
+    font-style: italic;
+    text-align: center; }
+  @media (min-width: 0) {
+    .hours-location {
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 600px) {
+    .hours-location {
+      padding: 1rem; } }
+  @media (min-width: 900px) {
+    .hours-location {
+      width: 40%;
+      float: left;
+      padding: 2.5rem; } }
+
+@media (min-width: 0) {
+  .hours {
+    width: 100%;
+    margin: 1rem auto; } }
+@media (min-width: 600px) {
+  .hours {
+    width: 100%;
+    margin: 1rem auto 0 5rem; } }
+@media (min-width: 900px) {
+  .hours {
+    width: 70%;
+    margin: 1rem auto; } }
+@media (min-width: 1200px) {
+  .hours {
+    width: 100%;
+    margin: 1rem auto 0 5rem; } }
+
 .sicilian-mondays {
-  background-color: #a00200; }
+  float: right;
+  padding-top: 3rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center; }
   .sicilian-mondays h3 {
     padding-top: 1rem;
     margin-bottom: 1rem; }
 
 .sicilian-image {
+  float: right;
+  padding-top: 3rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
   opacity: 0.9; }
 
 .queen-of-pies {

@@ -119,49 +119,6 @@ nav{
   }
 }
 
-
-.hours-location{
-  z-index: 2;
-  max-width: 300px;
-  overflow: hidden;
-  padding-top: 2rem;
-  box-sizing: border-box;
-  color: white;
-  
-  h1{
-    font-size: 18px;
-    text-align: center;
-  }
-
-  p{
-    margin: 0;
-    line-height: 2;
-    font-size: 15px;
-  }
-
-  .address{
-    font-style: italic;
-    text-align: center;
-  }
-
-  @media (min-width: 0){
-    width: 90%;
-    margin: 0 auto;
-  }
-
-   @media (min-width: 600px){
-    padding: 1rem;
-    
-  }
-
-   @media (min-width: 900px){
-    width: 25%;
-    float: left;
-    padding: 2.5rem;
-  }
-  
-}
-
 .about-us-info{
   z-index: 2;
   max-width: 900px;
@@ -303,22 +260,140 @@ nav{
     1px  1px 0 $brand-color1;
 }
 
+
+
+
+// additional info styles
+
+
+.add-info{
+  width: 100%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.add-info-content{
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: $brand-color4;
+}
+
+.hours-location{
+  float: left;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .row{
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  border-top: 25px solid $brand-color1;
+  border-top: 10px solid $brand-color1;
   background-color: darken($brand-color1, 20%);
   margin-bottom: 3rem;
 }
 
-.link-image{
+.row-1-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: $brand-color4;
+  overflow: hidden;
+
+  @media(min-width: 600px){
+    padding: 0 2rem;
+  }
+
+  @media(min-width: 900px){
+    padding: 0 5rem;
+  }
 }
 
-.sicilian-mondays{
-	background-color: darken($brand-color1, 10%);
+.hours-location{
+  z-index: 2;
+  max-width: 480px;
+  overflow: hidden;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  color: white;
+  
+  h1{
+    font-size: 18px;
+    text-align: center;
+  }
 
-  @extend %front-page-image-container;
+  p{
+    margin: 0;
+    line-height: 2;
+    font-size: 15px;
+  }
+
+  .address{
+    font-style: italic;
+    text-align: center;
+  }
+
+  @media (min-width: 0){
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 600px){
+    padding: 1rem;
+    
+  }
+
+  @media (min-width: 900px){
+    width: 40%;
+    float: left;
+    padding: 2.5rem;
+  }
+}
+
+.hours{
+  @media(min-width: 0){
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  @media(min-width: 600px){
+    width: 100%;
+    margin: 1rem auto 0 5rem;
+  }
+
+  @media(min-width: 900px){
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  @media(min-width: 1200px){
+    width: 100%;
+    margin: 1rem auto 0 5rem;
+  }
+}
+
+
+
+
+.sicilian-mondays{
+  float: right;
+  padding-top: 3rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
 
   h3{
     @extend %front-page-h3;
@@ -333,7 +408,12 @@ nav{
 }
 
 .sicilian-image{
-  @extend %front-page-background-image;
+  float: right;
+  padding-top: 3rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
   opacity: 0.9;
 }
 
