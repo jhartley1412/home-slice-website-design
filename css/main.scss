@@ -183,6 +183,7 @@ nav{
     font-family: "ff-more-web-pro-condensed";
     font-style: italic;
     font-size: 18px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: 0){
@@ -304,14 +305,14 @@ nav{
 
 .row{
   width: 100%;
-  max-height: 300px;
   overflow: hidden;
   box-sizing: border-box;
-  border: 25px solid $brand-color1;
-  border-left: none;
-  border-right: none;
+  border-top: 25px solid $brand-color1;
+  background-color: darken($brand-color1, 20%);
+  margin-bottom: 3rem;
+}
 
-  background-color: $brand-color2;
+.link-image{
 }
 
 .sicilian-mondays{
@@ -321,7 +322,8 @@ nav{
 
   h3{
     @extend %front-page-h3;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   h2{
@@ -332,7 +334,7 @@ nav{
 
 .sicilian-image{
   @extend %front-page-background-image;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .queen-of-pies{
@@ -360,7 +362,6 @@ nav{
 }
 
 .our-photos{
-  background-color: $brand-color1;
 
   @extend %front-page-image-container;
 
@@ -375,7 +376,6 @@ nav{
 }
 
 .our-events{
-  background-color: $brand-color2;
 
   @extend %front-page-image-container;
 
@@ -403,10 +403,9 @@ nav{
   width: 100%;
   max-width: 1024px;
   margin: 2rem auto;
-  background-color: $brand-color4;
   overflow: hidden;
   border-sizing: border-box;
-  border: 20px solid $brand-color1;
+  border: 15px solid $brand-color1;
   border-radius: 20px;
 
 
@@ -416,12 +415,16 @@ nav{
     font-family: "ff-more-web-pro-condensed";
     text-align: center;
     margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-style: italic;
   }
 
   h2{
     text-align: center;
     margin-bottom: 0.2rem;
     font-family: "ff-more-web-pro-condensed";
+    letter-spacing: 1px;
+    font-style: italic;
   }
 }
 
@@ -485,7 +488,7 @@ nav{
       font-weight: 400;
     }
 
-    .menu-food-info-bold{
+    .menu-italic{
       text-align: center;
     }
   }
@@ -536,7 +539,7 @@ nav{
       font-weight: 400;
     }
 
-    .menu-food-info-bold{
+    .menu-italic{
       text-align: center;
     }
   }
@@ -550,6 +553,7 @@ nav{
 .food-option{
   float: left;
   margin: 0;
+  font-size: 17px;
 }
 
 .tried-menu-container{
@@ -570,6 +574,7 @@ nav{
   float: right;
   font-style: italic;
   margin: 0 auto 0.5rem;
+  font-size: 17px;
 }
 
 .food-extra-info{
@@ -577,10 +582,6 @@ nav{
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-.menu-food-info-bold{
-  font-weight: 700;
 }
 
 

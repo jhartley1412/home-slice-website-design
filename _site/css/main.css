@@ -216,7 +216,8 @@ nav {
   .about-us-info h2 {
     font-family: "ff-more-web-pro-condensed";
     font-style: italic;
-    font-size: 18px; }
+    font-size: 18px;
+    letter-spacing: 2px; }
   @media (min-width: 0) {
     .about-us-info {
       margin: 0 auto; } }
@@ -304,21 +305,20 @@ nav {
 
 .row {
   width: 100%;
-  max-height: 300px;
   overflow: hidden;
   box-sizing: border-box;
-  border: 25px solid #d30300;
-  border-left: none;
-  border-right: none;
-  background-color: #529843; }
+  border-top: 25px solid #d30300;
+  background-color: #6d0200;
+  margin-bottom: 3rem; }
 
 .sicilian-mondays {
   background-color: #a00200; }
   .sicilian-mondays h3 {
-    padding-top: 2rem; }
+    padding-top: 1rem;
+    margin-bottom: 1rem; }
 
 .sicilian-image {
-  opacity: 0.5; }
+  opacity: 0.9; }
 
 .queen-of-pies {
   background-color: #3f7533; }
@@ -331,34 +331,33 @@ nav {
 .queen-of-pies-image {
   height: 100%; }
 
-.our-photos {
-  background-color: #d30300; }
-  .our-photos h3 {
-    padding-top: 4rem; }
+.our-photos h3 {
+  padding-top: 4rem; }
 
-.our-events {
-  background-color: #529843; }
-  .our-events h3 {
-    padding-top: 4rem; }
+.our-events h3 {
+  padding-top: 4rem; }
 
 .menu-container {
   width: 100%;
   max-width: 1024px;
   margin: 2rem auto;
-  background-color: #e9f898;
   overflow: hidden;
   border-sizing: border-box;
-  border: 20px solid #d30300;
+  border: 15px solid #d30300;
   border-radius: 20px;
   line-height: 1.4; }
   .menu-container h1 {
     font-family: "ff-more-web-pro-condensed";
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-style: italic; }
   .menu-container h2 {
     text-align: center;
     margin-bottom: 0.2rem;
-    font-family: "ff-more-web-pro-condensed"; }
+    font-family: "ff-more-web-pro-condensed";
+    letter-spacing: 1px;
+    font-style: italic; }
 
 .menu-pizza, .menu-booze, .menu-salads-antipasta, .menu-desserts-drinks {
   width: 100%;
@@ -401,7 +400,7 @@ nav {
     padding: 2rem; }
     .desserts h3, .beverages h3 {
       font-weight: 400; }
-    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+    .desserts .menu-italic, .beverages .menu-italic {
       text-align: center; } }
 @media (min-width: 600px) {
   .pizza-toppings {
@@ -435,7 +434,7 @@ nav {
     overflow: hidden; }
     .desserts h3, .beverages h3 {
       font-weight: 400; }
-    .desserts .menu-food-info-bold, .beverages .menu-food-info-bold {
+    .desserts .menu-italic, .beverages .menu-italic {
       text-align: center; } }
 .row-food {
   width: 90%;
@@ -443,7 +442,8 @@ nav {
 
 .food-option {
   float: left;
-  margin: 0; }
+  margin: 0;
+  font-size: 17px; }
 
 .tried-menu-container {
   width: 300px;
@@ -458,16 +458,14 @@ nav {
 .food-price {
   float: right;
   font-style: italic;
-  margin: 0 auto 0.5rem; }
+  margin: 0 auto 0.5rem;
+  font-size: 17px; }
 
 .food-extra-info {
   float: left;
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 1rem; }
-
-.menu-food-info-bold {
-  font-weight: 700; }
 
 footer {
   padding-bottom: 2rem;
