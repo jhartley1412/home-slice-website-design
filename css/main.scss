@@ -94,14 +94,16 @@ nav{
 }
 
 .home-slice-intro{
+  z-index: 2;
 	width: 100%;
   padding-bottom: 2rem;
+  position: relative;
 }
 
 .front-page-welcome{
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   min-height: 500px;
   margin: 3rem auto 2rem auto;
   position: relative;
@@ -121,8 +123,9 @@ nav{
 
 .about-us-info{
   z-index: 2;
+  width: 100%;
   max-width: 900px;
-  min-height: 500px;
+  min-height: 400px;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
@@ -147,13 +150,12 @@ nav{
     margin: 0 auto;
   }
 
-   @media (min-width: 600px){
+  @media (min-width: 600px){
     padding: 1rem;
   }
 
-   @media (min-width: 900px){
-    width: 75%;
-    float: left;
+  @media (min-width: 900px){
+    width: 100%;
     padding: 2.5rem;
     padding-bottom: 3rem;
   }
@@ -203,6 +205,15 @@ nav{
   }
 }
 
+.background-gif{
+  z-index: 1;
+  top: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.6;
+  width: 100%;
+}
+
 
 
 
@@ -234,31 +245,6 @@ nav{
   position: relative;
 }
 
-%front-page-h2{
-  z-index: 2;
-  font-size: 55px;
-  line-height: 1;
-  margin: 0 auto;
-  position:relative;
-
-  /* WebKit (Safari/Chrome) Only */
-  -webkit-text-stroke: 1px $brand-color1;
-  
-  /* If we weren't using text-shadow, we'd set a fallback color
-     and use this to set color instead
-    -webkit-text-fill-color: white; */
-  
-  color: $brand-color4;
-
-  text-shadow:
-    3px 3px 0 $brand-color1,
-    /* Simulated effect for Firefox and Opera
-       and nice enhancement for WebKit */
-   -1px -1px 0 $brand-color1,  
-    1px -1px 0 $brand-color1,
-   -1px  1px 0 $brand-color1,
-    1px  1px 0 $brand-color1;
-}
 
 
 
@@ -269,206 +255,158 @@ nav{
 .add-info{
   width: 100%;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: darken($brand-color1, 20%);
+  border-top: 25px solid $brand-color1;
 }
 
 .add-info-content{
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
-  background-color: $brand-color4;
+  box-sizing: border-box;
+  padding: 2rem;
 }
 
 .hours-location{
   float: left;
-  background-color: red;
-}
+  color: white;
 
+  h2{
+    margin: 0 auto;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-.row{
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  border-top: 10px solid $brand-color1;
-  background-color: darken($brand-color1, 20%);
-  margin-bottom: 3rem;
-}
-
-.row-1-container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: $brand-color4;
-  overflow: hidden;
-
-  @media(min-width: 600px){
-    padding: 0 2rem;
+  @media(min-width: 0){
+    width: 100%;
   }
 
   @media(min-width: 900px){
-    padding: 0 5rem;
+    width: 30%;
+    margin: 0 5%;
   }
 }
 
-.hours-location{
-  z-index: 2;
-  max-width: 480px;
-  overflow: hidden;
-  padding-top: 2rem;
-  box-sizing: border-box;
-  color: white;
-  
-  h1{
-    font-size: 18px;
-    text-align: center;
+.location{
+  text-align: center;
+
+  h3{
+    margin: 1rem auto 0 auto;
   }
 
   p{
-    margin: 0;
-    line-height: 2;
-    font-size: 15px;
-  }
-
-  .address{
-    font-style: italic;
-    text-align: center;
-  }
-
-  @media (min-width: 0){
-    width: 90%;
     margin: 0 auto;
   }
 
-  @media (min-width: 600px){
-    padding: 1rem;
-    
-  }
-
-  @media (min-width: 900px){
-    width: 40%;
-    float: left;
-    padding: 2.5rem;
+  a{
+    color: $brand-color4;
+    text-decoration: underline;
   }
 }
 
-.hours{
-  @media(min-width: 0){
-    width: 100%;
-    margin: 1rem auto;
+.map{
+  width: 100%;
+  min-width: 230px;
+  max-width: 320px;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  border: 10px solid #F9F9F9;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+.more-about-us{
+  float: left;
+  color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  h1{
+    margin: 0 auto;
+    text-align: center;
   }
 
-  @media(min-width: 600px){
+  h3{
+    font-size: 22px;
+    line-height: 2;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  @media(min-width: 0){
     width: 100%;
-    margin: 1rem auto 0 5rem;
+    margin: 2rem auto;
   }
 
   @media(min-width: 900px){
-    width: 70%;
-    margin: 1rem auto;
-  }
-
-  @media(min-width: 1200px){
-    width: 100%;
-    margin: 1rem auto 0 5rem;
+    width: 50%;
+    margin: 0 5%;
   }
 }
 
 
-
-
-.sicilian-mondays{
-  float: right;
-  padding-top: 3rem;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
+.more-about-us-link{
+  width: 100%;
+  min-width: 200px;
+  height: 150px;
+  margin: 1rem auto;
   text-align: center;
+  float: left;
+  border-radius: 10px;
 
-  h3{
-    @extend %front-page-h3;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+  &:nth-child(even){
+    background-color: $brand-color1;
   }
 
-  h2{
-    @extend %front-page-h2;
+  &:nth-child(odd){
+    background-color: $brand-color2;
   }
-  
+
 }
 
-.sicilian-image{
-  float: right;
-  padding-top: 3rem;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center;
-  opacity: 0.9;
-}
+.big-text{
+  z-index: 2;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 auto;
+  position:relative;
 
-.queen-of-pies{
-  background-color: darken($brand-color2, 10%);
+  /* WebKit (Safari/Chrome) Only */
+  // -webkit-text-stroke: 1px $brand-color1;
 
-  @extend %front-page-image-container;
+  /* If we weren't using text-shadow, we'd set a fallback color
+   and use this to set color instead
+  -webkit-text-fill-color: white; */
 
-  h3{
-    @extend %front-page-h3;
-    margin-left: -6rem;
-    padding-top: 3.5rem;
-  }
+  color: $brand-color4;
 
-  h2{
-    @extend %front-page-h2;
+  text-shadow:
+  4px 2px 0 $brand-color1,
+  /* Simulated effect for Firefox and Opera
+     and nice enhancement for WebKit */
+  -1px -1px 0 $brand-color1,  
+  1px -1px 0 $brand-color1,
+  -1px  1px 0 $brand-color1,
+  1px  1px 0 $brand-color1;
+
+  .queen-of-pies{
     font-style: italic;
   }
-
 }
 
-.queen-of-pies-image{
-  @extend %front-page-background-image;
-  
-  height: 100%;
-}
 
-.our-photos{
 
-  @extend %front-page-image-container;
 
-  h3{
-    @extend %front-page-h3;
-    padding-top: 4rem;
-  }
 
-  h2{
-    @extend %front-page-h2;
-  }
-}
 
-.our-events{
 
-  @extend %front-page-image-container;
 
-  h3{
-    @extend %front-page-h3;
-    padding-top: 4rem;
-  }
-
-  h2{
-    @extend %front-page-h2;
-  }
-	
-}
 
 
 

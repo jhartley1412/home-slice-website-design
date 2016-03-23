@@ -149,13 +149,15 @@ nav {
   height: 300px; }
 
 .home-slice-intro {
+  z-index: 2;
   width: 100%;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  position: relative; }
 
 .front-page-welcome {
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   min-height: 500px;
   margin: 3rem auto 2rem auto;
   position: relative;
@@ -171,8 +173,9 @@ nav {
 
 .about-us-info {
   z-index: 2;
+  width: 100%;
   max-width: 900px;
-  min-height: 500px;
+  min-height: 400px;
   overflow: hidden;
   padding-top: 2rem;
   box-sizing: border-box;
@@ -196,8 +199,7 @@ nav {
       padding: 1rem; } }
   @media (min-width: 900px) {
     .about-us-info {
-      width: 75%;
-      float: left;
+      width: 100%;
       padding: 2.5rem;
       padding-bottom: 3rem; } }
 
@@ -235,164 +237,112 @@ nav {
     .about-us-bg-img {
       height: 800px; } }
 
-.queen-of-pies, .our-photos, .our-events {
-  float: left;
-  padding-top: 3rem;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center; }
-
-.queen-of-pies-image {
+.background-gif {
   z-index: 1;
-  position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0 auto; }
-
-.sicilian-mondays h3, .queen-of-pies h3, .our-photos h3, .our-events h3 {
-  z-index: 2;
-  color: white;
-  font-size: 28px;
-  line-height: 1;
-  margin: 0 auto;
-  position: relative; }
-
-.sicilian-mondays h2, .queen-of-pies h2, .our-photos h2, .our-events h2 {
-  z-index: 2;
-  font-size: 55px;
-  line-height: 1;
-  margin: 0 auto;
-  position: relative;
-  /* WebKit (Safari/Chrome) Only */
-  -webkit-text-stroke: 1px #d30300;
-  /* If we weren't using text-shadow, we'd set a fallback color
-     and use this to set color instead
-    -webkit-text-fill-color: white; */
-  color: #e9f898;
-  text-shadow: 3px 3px 0 #d30300, -1px -1px 0 #d30300, 1px -1px 0 #d30300, -1px 1px 0 #d30300, 1px 1px 0 #d30300; }
+  right: 0;
+  position: absolute;
+  opacity: 0.6;
+  width: 100%; }
 
 .add-info {
   width: 100%;
   overflow: hidden;
-  background-color: lightblue; }
+  background-color: #6d0200;
+  border-top: 25px solid #d30300; }
 
 .add-info-content {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
-  background-color: #e9f898; }
+  box-sizing: border-box;
+  padding: 2rem; }
 
 .hours-location {
   float: left;
-  background-color: red; }
-
-.row {
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  border-top: 10px solid #d30300;
-  background-color: #6d0200;
-  margin-bottom: 3rem; }
-
-.row-1-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #e9f898;
-  overflow: hidden; }
-  @media (min-width: 600px) {
-    .row-1-container {
-      padding: 0 2rem; } }
-  @media (min-width: 900px) {
-    .row-1-container {
-      padding: 0 5rem; } }
-
-.hours-location {
-  z-index: 2;
-  max-width: 480px;
-  overflow: hidden;
-  padding-top: 2rem;
-  box-sizing: border-box;
   color: white; }
-  .hours-location h1 {
-    font-size: 18px;
-    text-align: center; }
-  .hours-location p {
-    margin: 0;
-    line-height: 2;
-    font-size: 15px; }
-  .hours-location .address {
-    font-style: italic;
+  .hours-location h2 {
+    margin: 0 auto;
     text-align: center; }
   @media (min-width: 0) {
     .hours-location {
-      width: 90%;
-      margin: 0 auto; } }
-  @media (min-width: 600px) {
-    .hours-location {
-      padding: 1rem; } }
+      width: 100%; } }
   @media (min-width: 900px) {
     .hours-location {
-      width: 40%;
-      float: left;
-      padding: 2.5rem; } }
+      width: 30%;
+      margin: 0 5%; } }
 
-@media (min-width: 0) {
-  .hours {
-    width: 100%;
-    margin: 1rem auto; } }
-@media (min-width: 600px) {
-  .hours {
-    width: 100%;
-    margin: 1rem auto 0 5rem; } }
-@media (min-width: 900px) {
-  .hours {
-    width: 70%;
-    margin: 1rem auto; } }
-@media (min-width: 1200px) {
-  .hours {
-    width: 100%;
-    margin: 1rem auto 0 5rem; } }
-
-.sicilian-mondays {
-  float: right;
-  padding-top: 3rem;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
+.location {
   text-align: center; }
-  .sicilian-mondays h3 {
-    padding-top: 1rem;
-    margin-bottom: 1rem; }
+  .location h3 {
+    margin: 1rem auto 0 auto; }
+  .location p {
+    margin: 0 auto; }
+  .location a {
+    color: #e9f898;
+    text-decoration: underline; }
 
-.sicilian-image {
-  float: right;
-  padding-top: 3rem;
-  position: relative;
+.map {
+  width: 100%;
+  min-width: 230px;
+  max-width: 320px;
+  margin: 2rem auto;
   box-sizing: border-box;
+  border: 10px solid #F9F9F9; }
+  .map:hover {
+    cursor: pointer; }
+
+.more-about-us {
+  float: left;
+  color: white;
   overflow: hidden;
+  box-sizing: border-box; }
+  .more-about-us h1 {
+    margin: 0 auto;
+    text-align: center; }
+  .more-about-us h3 {
+    font-size: 22px;
+    line-height: 2; }
+  .more-about-us a {
+    text-decoration: none;
+    color: white; }
+  @media (min-width: 0) {
+    .more-about-us {
+      width: 100%;
+      margin: 2rem auto; } }
+  @media (min-width: 900px) {
+    .more-about-us {
+      width: 50%;
+      margin: 0 5%; } }
+
+.more-about-us-link {
+  width: 100%;
+  min-width: 200px;
+  height: 150px;
+  margin: 1rem auto;
   text-align: center;
-  opacity: 0.9; }
+  float: left;
+  border-radius: 10px; }
+  .more-about-us-link:nth-child(even) {
+    background-color: #d30300; }
+  .more-about-us-link:nth-child(odd) {
+    background-color: #529843; }
 
-.queen-of-pies {
-  background-color: #3f7533; }
-  .queen-of-pies h3 {
-    margin-left: -6rem;
-    padding-top: 3.5rem; }
-  .queen-of-pies h2 {
+.big-text {
+  z-index: 2;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 auto;
+  position: relative;
+  /* WebKit (Safari/Chrome) Only */
+  /* If we weren't using text-shadow, we'd set a fallback color
+   and use this to set color instead
+  -webkit-text-fill-color: white; */
+  color: #e9f898;
+  text-shadow: 4px 2px 0 #d30300, -1px -1px 0 #d30300, 1px -1px 0 #d30300, -1px 1px 0 #d30300, 1px 1px 0 #d30300; }
+  .big-text .queen-of-pies {
     font-style: italic; }
-
-.queen-of-pies-image {
-  height: 100%; }
-
-.our-photos h3 {
-  padding-top: 4rem; }
-
-.our-events h3 {
-  padding-top: 4rem; }
 
 .menu-container {
   width: 100%;
