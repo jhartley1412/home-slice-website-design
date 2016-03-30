@@ -1,0 +1,187 @@
+
+@import 'variables';
+
+.menu-container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 2em auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 15px solid $brand-color1;
+  border-radius: 20px;
+
+
+  line-height: 1.4;
+
+  h1{
+    font-family: "ff-more-web-pro-condensed";
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+  h2{
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: "ff-more-web-pro-condensed";
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+}
+
+.menu-pizza, .menu-salads-antipasta, .menu-desserts-drinks{
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-booze{
+  @extend .menu-pizza;
+
+  h2{
+    text-align: center;
+  }
+
+  h3{
+    text-align: center;
+  }
+}
+
+@media (min-width: 0px){
+
+  .pizza-toppings{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem;
+  }
+
+  .tried-and-true{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    h3{
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px;
+    }
+  }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer{
+    width: 100%;    
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    h3{
+      font-weight: 400;
+    }
+  }
+
+  .desserts, .beverages{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    h3{
+      font-weight: 400;
+    }
+
+    .menu-italic{
+      text-align: center;
+    }
+  }
+}
+
+
+
+@media (min-width: 600px){
+
+  .pizza-toppings{
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .tried-and-true{
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden;
+
+    h3{
+      text-align: center;
+      margin-top: 0;
+      font-size: 17px;
+    }
+  }
+
+  .salads, .antipasta, .calzone, .subs, .wine, .beer{
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden;
+
+    h3{
+      font-weight: 400;
+    }
+  }
+
+  .desserts, .beverages{
+    width: 40%;
+    margin: auto 5%;
+    float: left;
+    overflow: hidden;
+
+    h3{
+      font-weight: 400;
+    }
+
+    .menu-italic{
+      text-align: center;
+    }
+  }
+}
+
+.row-food{
+  width: 90%;
+  overflow: hidden;
+}
+
+.food-option{
+  float: left;
+  margin: 0;
+  font-size: 17px;
+}
+
+.tried-menu-container{
+  width: 300px;
+  margin: 0 auto;
+
+  .fa-circle{
+    padding: 0 5px 5px 0;
+  }
+}
+
+.menu-italic{
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.food-price{
+  float: right;
+  font-style: italic;
+  margin: 0 auto 0.5rem;
+  font-size: 17px;
+}
+
+.food-extra-info{
+  float: left;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

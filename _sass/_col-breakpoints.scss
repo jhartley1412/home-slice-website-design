@@ -5,7 +5,8 @@ $gut-width: 0;
 
 
 
-$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remember PEMAS //ALWAYS HAVE SPACE between $var - #
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; 
+//remember PEMAS //ALWAYS HAVE SPACE between $var - #
 
          // col-within = # of columns within element
 @mixin grid($col-within){
@@ -15,16 +16,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col; //remem
 
 
 @media (min-width: 0){
-
-  .logo-container{
-    z-index: 2;
-    width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: -20px;
-
-  }
 
   .logo{
     width: 100%;

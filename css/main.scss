@@ -2,16 +2,16 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import 'variables';
+
+@import 'menu-page';
+
+@import 'page_breakpoints';
+
 @import 'col-breakpoints';
 // breakpoints @ 0, 600, 900
 
 // http://localhost:4000/
-
-$brand-color1: #d30300; //red
-$brand-color2: #529843; //green
-$brand-color3: #dd6503; //orange
-$brand-color4: #e9f898; //yellow
-$brand-color5: #252525; //grey
 
 
 
@@ -44,7 +44,7 @@ nav{
 	width: 100%;
   float: left;
   font-family: "ff-more-web-pro-condensed", serif;
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
 
   border-bottom: 25px solid $brand-color2;
@@ -56,11 +56,12 @@ nav{
   max-width: 600px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3em;
   overflow: hidden;
   
   a{
-    padding: 0.6rem 1.1rem 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -76,13 +77,23 @@ nav{
 .nav-container-left{
   float: left; 
   width: 50%;
+  box-sizing: border-box;
 }
 
 .nav-container-right{
   float: right;
   width: 50%;
+  box-sizing: border-box;
   text-align: right;
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -96,122 +107,96 @@ nav{
 .home-slice-intro{
   z-index: 2;
 	width: 100%;
-  padding-bottom: 2rem;
   position: relative;
 }
 
 .front-page-welcome{
   z-index: 2;
   width: 100%;
-  max-width: 900px;
-  min-height: 500px;
-  margin: 3rem auto 2rem auto;
+  max-width: 1200px;
+  margin: 3rem auto;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
-  background-color: darken($brand-color1, 20%);
-  
-  // when div reaches max-width, the borderes are rounded
-  @media (min-width: 0){
-    border-radius: 0;
-  }
 
-  @media (min-width: 1200px){
-    border-radius: 20px;
+  h1{
+    text-align: center;
+    font-family: "ff-more-web-pro-condensed";
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: -1em;
+    color: $brand-color1;
   }
 }
 
-.about-us-info{
+.about-us{
   z-index: 2;
   width: 100%;
-  max-width: 900px;
-  min-height: 400px;
   overflow: hidden;
-  padding-top: 2rem;
   box-sizing: border-box;
-  padding: 2.5rem;
   color: white;
+  text-align: center;
   position: relative;
 
   h1, h2{
-    text-align: center;
     margin: 0 auto 1rem auto;
     line-height: 1.4;
-  }
-  
-  h2{
-    font-family: "ff-more-web-pro-condensed";
-    font-style: italic;
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
-
-  @media (min-width: 0){
-    margin: 0 auto;
-  }
-
-  @media (min-width: 600px){
-    padding: 1rem;
-  }
-
-  @media (min-width: 900px){
-    width: 100%;
-    padding: 2.5rem;
-    padding-bottom: 3rem;
   }
 }
 
 .about-us-text{
   z-index: 2;
+  max-width: 700px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1em;
   line-height: 2;
   position: relative;
   overflow: hidden;
+  background-color: $brand-color1;
+}
 
-  @media (min-width: 0){
-    font-size: 16px;
-    padding: 0;
-    width: 95%;
+.about-us-img{
+  z-index: 1;
+  width: 1200px;
+  position: absolute;
+  top: 0;
+}
 
-    h1{
-      font-size: 26px;
-    }
-  }
+.hours-location{
+  width: 70%;
+  max-width: 900px;
+  padding: 2em;
+  margin: 0 auto;
+  color: white;
+  overflow: hidden;
 
-  @media (min-width: 600px){
-    font-size: 18px;
-    padding: 2rem 0;
-    width: 60%;
-
-    h1{
-      font-size: 30px;
-    }
+  h2{
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
-.about-us-bg-img{
-  z-index: 1;
-  top: 0;
-  right: 0;
-  position: absolute;
-  opacity: 0.6;
-
-  @media (min-width: 0){
-    height: 100%;
-  }
-
-  @media (min-width: 600px){
-    height: 800px;
-  }
+.hours{
+  float: left;
 }
 
-.background-gif{
-  z-index: 1;
-  top: 0;
-  right: 0;
-  position: absolute;
-  opacity: 0.6;
-  width: 100%;
+.location{
+  float: right;
+  text-align: center;
+
+  h3{
+    margin: 1rem auto 0 auto;
+  }
+
+  p{
+    margin: 0 auto;
+  }
+
+  a{
+    color: $brand-color4;
+    text-decoration: underline;
+  }
 }
 
 
@@ -266,42 +251,6 @@ nav{
   overflow: hidden;
   box-sizing: border-box;
   padding: 2rem;
-}
-
-.hours-location{
-  float: left;
-  color: white;
-
-  h2{
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  @media(min-width: 0){
-    width: 100%;
-  }
-
-  @media(min-width: 900px){
-    width: 30%;
-    margin: 0 5%;
-  }
-}
-
-.location{
-  text-align: center;
-
-  h3{
-    margin: 1rem auto 0 auto;
-  }
-
-  p{
-    margin: 0 auto;
-  }
-
-  a{
-    color: $brand-color4;
-    text-decoration: underline;
-  }
 }
 
 .map{
@@ -399,220 +348,6 @@ nav{
     font-style: italic;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Menu Page
-
-.menu-container{
-  width: 100%;
-  max-width: 1024px;
-  margin: 2rem auto;
-  overflow: hidden;
-  border-sizing: border-box;
-  border: 15px solid $brand-color1;
-  border-radius: 20px;
-
-
-  line-height: 1.4;
-
-  h1{
-    font-family: "ff-more-web-pro-condensed";
-    text-align: center;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-    font-style: italic;
-  }
-
-  h2{
-    text-align: center;
-    margin-bottom: 0.2rem;
-    font-family: "ff-more-web-pro-condensed";
-    letter-spacing: 1px;
-    font-style: italic;
-  }
-}
-
-.menu-pizza, .menu-salads-antipasta, .menu-desserts-drinks{
-  width: 100%;
-  overflow: hidden;
-}
-
-.menu-booze{
-  @extend .menu-pizza;
-
-  h2{
-    text-align: center;
-  }
-
-  h3{
-    text-align: center;
-  }
-}
-
-@media (min-width: 0px){
-
-  .pizza-toppings{
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem;
-  }
-
-  .tried-and-true{
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem;
-
-    h3{
-      text-align: center;
-      margin-top: 0;
-      font-size: 17px;
-    }
-  }
-
-  .salads, .antipasta, .calzone, .subs, .wine, .beer{
-    width: 100%;    
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem;
-
-    h3{
-      font-weight: 400;
-    }
-  }
-
-  .desserts, .beverages{
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem;
-
-    h3{
-      font-weight: 400;
-    }
-
-    .menu-italic{
-      text-align: center;
-    }
-  }
-}
-
-
-
-@media (min-width: 600px){
-
-  .pizza-toppings{
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden;
-  }
-
-  .tried-and-true{
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden;
-
-    h3{
-      text-align: center;
-      margin-top: 0;
-      font-size: 17px;
-    }
-  }
-
-  .salads, .antipasta, .calzone, .subs, .wine, .beer{
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden;
-
-    h3{
-      font-weight: 400;
-    }
-  }
-
-  .desserts, .beverages{
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden;
-
-    h3{
-      font-weight: 400;
-    }
-
-    .menu-italic{
-      text-align: center;
-    }
-  }
-}
-
-.row-food{
-  width: 90%;
-  overflow: hidden;
-}
-
-.food-option{
-  float: left;
-  margin: 0;
-  font-size: 17px;
-}
-
-.tried-menu-container{
-  width: 300px;
-  margin: 0 auto;
-
-  .fa-circle{
-    padding: 0 5px 5px 0;
-  }
-}
-
-.menu-italic{
-  font-style: italic;
-  font-size: 1rem;
-}
-
-.food-price{
-  float: right;
-  font-style: italic;
-  margin: 0 auto 0.5rem;
-  font-size: 17px;
-}
-
-.food-extra-info{
-  float: left;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer{
