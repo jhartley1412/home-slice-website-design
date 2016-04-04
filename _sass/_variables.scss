@@ -12,6 +12,9 @@ body{
  // background-color: $brand-color5;
 
 	a{
+		color: $brand-color4;
+		text-decoration: underline;
+
 	    &:hover{
 	      cursor: pointer;
 	    }
@@ -21,21 +24,29 @@ body{
 h1{
 	font-family: "ff-more-web-pro-condensed";
 	text-align: center;
+	margin-top: -1rem;
 	margin-bottom: 2rem;
+	font-size: 1.5em;
 	letter-spacing: 2px;
 	font-style: italic;
+	color: $brand-color1;
 }
 
 h2{
 	text-align: center;
 	margin-bottom: 0.2rem;
 	font-family: "ff-more-web-pro-condensed";
+	font-size: 1.2em;
 	letter-spacing: 1px;
 	font-style: italic;
 }
 
 .bold-text{
   font-weight: bold;
+}
+
+.no-underline{
+	text-decoration: none;
 }
 
 

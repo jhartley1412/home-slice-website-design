@@ -35,7 +35,7 @@ nav{
 }
 
 
-.nav-buttons-container{
+.nav-buttons-container-sm, .nav-buttons-container-md{
   width: 100%;
   max-width: 700px;
   height: 100%;
@@ -54,7 +54,17 @@ nav{
   }
 }
 
-.nav-container-small{
+.nav-buttons-container-md{
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+
+  a{
+    margin-right: 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+.nav-container{
     a{
       width: 100%;
       box-sizing: border-box;
@@ -107,19 +117,12 @@ nav{
 .front-page-welcome{
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
   margin: 3rem auto;
   position: relative;
   box-sizing: border-box;
 
-  h1{
-    text-align: center;
-    font-family: "ff-more-web-pro-condensed";
-    font-style: italic;
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-top: -1rem;
-    color: $brand-color1;
+  .tag-line{
+    padding: 1rem;
   }
 }
 
@@ -147,14 +150,31 @@ nav{
 
 .about-us-img{
   z-index: 1;
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   position: absolute;
   top: 0;
 }
 
+.more-about-us-btn{
+  width: 140px;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  border-radius: 10px;
+  background-color: $brand-color2;
+  text-align: center;
+
+  &:hover{
+    background-color: darken($brand-color2, 10%);
+    cursor: pointer;
+  }
+}
+
 .hours-location{
   width: 70%;
-  max-width: 960px;
+  max-width: 1200px;
   min-width: 300px;
   padding: 1rem;
   color: $brand-color5;
@@ -169,7 +189,6 @@ nav{
 .hours{
 
   .bold-text{
-    margin-top: 1.5rem;
     margin-bottom: -0.2rem;
   }
 
@@ -187,14 +206,12 @@ nav{
 
   p{
     margin: 0 auto;
-    margin-top: 1.5rem;
     text-align: left;
   }
 
   .address-link, a{
-    color: $brand-color4;
-    text-decoration: underline;
     text-align: center;
+
   }
 }
 
@@ -257,7 +274,6 @@ nav{
   min-width: 230px;
   max-width: 320px;
   margin: 2rem auto;
-  margin-left: 0.8rem;
   box-sizing: border-box;
   border: 10px solid $brand-color2;
   display: block;
@@ -274,29 +290,8 @@ nav{
   overflow: hidden;
   box-sizing: border-box;
 
-  h1{
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  h3{
-    font-size: 22px;
-    line-height: 2;
-  }
-
   a{
-    text-decoration: none;
     color: white;
-  }
-
-  @media(min-width: 0){
-    width: 100%;
-    margin: 2rem auto;
-  }
-
-  @media(min-width: 900px){
-    width: 50%;
-    margin: 0 5%;
   }
 }
 
@@ -357,10 +352,6 @@ footer{
 	clear: both;
 
 	color: white;
-
-	a{
-		color: $brand-color4;
-	}
 }
 
 %foot-divs{
