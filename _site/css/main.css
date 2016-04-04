@@ -1,3 +1,49 @@
+body {
+  font-family: "ff-tisa-sans-web-pro";
+  line-height: 2; }
+  body a:hover {
+    cursor: pointer; }
+
+h1 {
+  font-family: "ff-more-web-pro-condensed";
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-style: italic; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-family: "ff-more-web-pro-condensed";
+  letter-spacing: 1px;
+  font-style: italic; }
+
+.bold-text {
+  font-weight: bold; }
+
+body {
+  font-family: "ff-tisa-sans-web-pro";
+  line-height: 2; }
+  body a:hover {
+    cursor: pointer; }
+
+h1 {
+  font-family: "ff-more-web-pro-condensed";
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-style: italic; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-family: "ff-more-web-pro-condensed";
+  letter-spacing: 1px;
+  font-style: italic; }
+
+.bold-text {
+  font-weight: bold; }
+
 .menu-container {
   width: 100%;
   max-width: 1024px;
@@ -5,20 +51,7 @@
   overflow: hidden;
   box-sizing: border-box;
   border: 15px solid #d30300;
-  border-radius: 20px;
-  line-height: 1.4; }
-  .menu-container h1 {
-    font-family: "ff-more-web-pro-condensed";
-    text-align: center;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-    font-style: italic; }
-  .menu-container h2 {
-    text-align: center;
-    margin-bottom: 0.2rem;
-    font-family: "ff-more-web-pro-condensed";
-    letter-spacing: 1px;
-    font-style: italic; }
+  border-radius: 20px; }
 
 .menu-pizza, .menu-booze, .menu-salads-antipasta, .menu-desserts-drinks {
   width: 100%;
@@ -128,6 +161,29 @@
   margin-top: 0;
   margin-bottom: 1rem; }
 
+body {
+  font-family: "ff-tisa-sans-web-pro";
+  line-height: 2; }
+  body a:hover {
+    cursor: pointer; }
+
+h1 {
+  font-family: "ff-more-web-pro-condensed";
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-style: italic; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-family: "ff-more-web-pro-condensed";
+  letter-spacing: 1px;
+  font-style: italic; }
+
+.bold-text {
+  font-weight: bold; }
+
 @media (min-width: 0) {
   h1 {
     font-size: 16px; }
@@ -145,19 +201,30 @@
   .logo-container {
     z-index: 2;
     width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: 1em; }
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative; }
 
   .logo {
-    margin-top: 1em; }
+    margin: 1em auto; }
+
+  nav {
+    border-bottom: 0; }
+
+  .nav-buttons-container {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .nav-buttons-container a {
+      border-radius: 0; }
+
+  .nav-container-small {
+    display: block; }
 
   .nav-container-left {
-    padding-left: 0.5em; }
+    display: none; }
 
   .nav-container-right {
-    padding-right: 0.5em; }
+    display: none; }
 
   .more-about-us-btn {
     width: 140px;
@@ -179,9 +246,40 @@
   .about-us-img {
     display: none; }
 
+  .hours-location {
+    margin: 0 auto;
+    margin-top: 1rem; }
+
+  .hours, .location {
+    width: 100%;
+    float: none; }
+
+  .location {
+    margin-top: 2rem; }
+
   .add-info {
     display: none; } }
 @media (min-width: 410px) {
+  nav {
+    border-bottom: 25px solid #529843; }
+
+  .nav-buttons-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem; }
+    .nav-buttons-container a {
+      border-radius: 10px; }
+
+  .nav-container-small {
+    display: none; }
+
+  .nav-container-left {
+    display: block;
+    padding-left: 2.5em; }
+
+  .nav-container-right {
+    display: block;
+    padding-right: 2.5em; }
+
   .extra_info {
     display: inline; }
 
@@ -191,46 +289,50 @@
   .more-about-us-btn {
     display: none; }
 
+  .hours-location {
+    margin: 0 auto; }
+
   .add-info {
     display: block; } }
 @media (min-width: 600px) {
+  h2 {
+    margin: 0 auto 1rem auto;
+    line-height: 1.4; }
+
+  .logo-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 184px;
+    margin: 1rem auto;
+    position: relative;
+    margin-bottom: -90px; }
+
+  .hours-location {
+    margin-top: 2rem; }
+
+  .hours, .location {
+    width: 40%; }
+
+  .hours {
+    float: left;
+    margin-left: 0;
+    margin-right: 5%; }
+
+  .location {
+    margin: 0;
+    margin-right: 5%;
+    float: right; }
+
   .about-us-text {
     width: 60%; }
 
   .about-us-img {
     display: block; } }
 @media (min-width: 0) {
-  .logo {
-    width: 100%;
-    top: 0;
-    margin-bottom: 1rem; }
-
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
     width: 100%;
     margin-right: 0; } }
-@media (min-width: 600px) {
-  .logo-container {
-    z-index: 2;
-    width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: -90px; }
-
-  .logo {
-    width: 100%; } }
 @media (min-width: 900px) {
-  .logo-container {
-    z-index: 2;
-    width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: -90px; }
-
-  .logo {
-    width: 100%; }
-
   .col-md-1 {
     width: 6.66666666667%;
     margin-right: 0; }
@@ -290,17 +392,11 @@
   .col-md-15 {
     width: 100%;
     margin-right: 0; } }
-body {
-  font-family: "ff-tisa-sans-web-pro";
-  line-height: 2; }
-  body a:hover {
-    cursor: pointer; }
-
-.bold-text {
-  font-weight: bold; }
-
 header {
   overflow: hidden; }
+
+.logo {
+  width: 100%; }
 
 nav {
   z-index: 1;
@@ -309,25 +405,28 @@ nav {
   float: left;
   font-family: "ff-more-web-pro-condensed", serif;
   font-size: 20px;
-  position: relative;
-  border-bottom: 25px solid #529843; }
+  position: relative; }
 
 .nav-buttons-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.3em;
   overflow: hidden; }
   .nav-buttons-container a {
     padding: 0.5rem 1rem;
-    border-radius: 10px;
     color: white;
     text-decoration: none; }
     .nav-buttons-container a:hover {
       background-color: #652319;
       cursor: pointer; }
+
+.nav-container-small a {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: block;
+  text-align: center; }
 
 .nav-container-left {
   float: left;
@@ -339,6 +438,9 @@ nav {
   width: 50%;
   box-sizing: border-box;
   text-align: right; }
+
+.current-nav-button {
+  background-color: #652319; }
 
 .home-page-container {
   display: inline-block;
@@ -362,7 +464,7 @@ nav {
     font-style: italic;
     font-size: 25px;
     letter-spacing: 2px;
-    margin-top: -1em;
+    margin-top: -1rem;
     color: #d30300; }
 
 .about-us {
@@ -373,16 +475,13 @@ nav {
   color: white;
   text-align: center;
   position: relative; }
-  .about-us h1, .about-us h2 {
-    margin: 0 auto 1rem auto;
-    line-height: 1.4; }
 
 .about-us-text {
   z-index: 2;
   max-width: 700px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1rem;
   line-height: 2;
   position: relative;
   overflow: hidden;
@@ -396,28 +495,32 @@ nav {
 
 .hours-location {
   width: 70%;
-  max-width: 900px;
-  padding: 2em;
-  margin: 0 auto;
-  color: white;
+  max-width: 960px;
+  min-width: 300px;
+  padding: 1rem;
+  color: #252525;
   overflow: hidden; }
-  .hours-location h2 {
+  .hours-location h1 {
     margin: 0 auto;
     text-align: center; }
 
-.hours {
-  float: left; }
+.hours .bold-text {
+  margin-top: 1.5rem;
+  margin-bottom: -0.2rem; }
+.hours p {
+  margin: 0 auto; }
 
-.location {
-  float: right;
+.location h3 {
+  margin: 1rem auto 0 auto;
   text-align: center; }
-  .location h3 {
-    margin: 1rem auto 0 auto; }
-  .location p {
-    margin: 0 auto; }
-  .location a {
-    color: #e9f898;
-    text-decoration: underline; }
+.location p {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  text-align: left; }
+.location .address-link, .location a {
+  color: #e9f898;
+  text-decoration: underline;
+  text-align: center; }
 
 .add-info {
   width: 100%;
@@ -438,14 +541,16 @@ nav {
   min-width: 230px;
   max-width: 320px;
   margin: 2rem auto;
+  margin-left: 0.8rem;
   box-sizing: border-box;
-  border: 10px solid #F9F9F9; }
+  border: 10px solid #529843;
+  display: block; }
   .map:hover {
     cursor: pointer; }
 
 .more-about-us {
   float: left;
-  color: white;
+  color: #252525;
   overflow: hidden;
   box-sizing: border-box; }
   .more-about-us h1 {
@@ -496,7 +601,7 @@ nav {
 
 footer {
   padding-bottom: 2rem;
-  background-color: #252525;
+  background-color: #6d0200;
   clear: both;
   color: white; }
   footer a {

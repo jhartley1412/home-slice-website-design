@@ -17,12 +17,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 @media (min-width: 0){
 
-  .logo{
-    width: 100%;
-    top: 0;
-    margin-bottom: 1rem;
-  }
-
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15{
     width: 100%;
     margin-right: $gut-width;
@@ -30,41 +24,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   
 }
 
-@media (min-width: 600px){
-  
-  .logo-container{
-    z-index: 2;
-    width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: -90px;
-
-  }
-
-  .logo{
-    width: 100%;
-  }
-
-}
-
 
 @media (min-width: 900px){
-
-  .logo-container{
-    z-index: 2;
-    width: 100%;
-    max-width: 184px;
-    margin: 1rem auto;
-    position: relative;
-    margin-bottom: -90px;
-
-  }
-
-  .logo{
-    width: 100%;
-  }
-
   
   .col-md-1{
     width: 6.66666666667%;

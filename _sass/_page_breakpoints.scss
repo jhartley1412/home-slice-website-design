@@ -25,24 +25,40 @@
 	}
 
 	.logo-container{
-	    z-index: 2;
-	    width: 100%;
-	    max-width: 184px;
-	    margin: 1rem auto;
-	    position: relative;
-	    margin-bottom: 1em;
-	  }
+		z-index: 2;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		position: relative;
+	}
 
 	.logo{
-	  	margin-top: 1em;
+	  	margin: 1em auto;
+	}
+
+	nav{
+		border-bottom: 0;
+	}
+
+	.nav-buttons-container{
+		padding-top: 0;
+  		padding-bottom: 0;
+
+  		a{
+  			border-radius: 0;
+  		}
+	}
+
+	.nav-container-small{
+		display: block;
 	}
 
 	.nav-container-left{
-		padding-left: 0.5em;
+		display: none;
 	}
 
 	.nav-container-right{
-		padding-right: 0.5em;
+		display: none;
 	}
 
 	
@@ -72,6 +88,22 @@
 		display: none;
 	}
 
+	.hours-location{
+		margin: 0 auto;
+		margin-top: 1rem;
+	}
+
+
+	.hours, .location{
+		width: 100%;
+		float: none;
+	}
+
+	.location{
+		margin-top: 2rem;
+	}
+
+
 
 	.add-info{
 		display: none;
@@ -81,11 +113,38 @@
 
 
 @media (min-width: 410px){
+	
+	nav{
+		border-bottom: 25px solid $brand-color2;
+	}
+
+	.nav-buttons-container{
+		padding-top: 0.5rem;
+  		padding-bottom: 0.3rem;
+
+  		a{
+  			border-radius: 10px;
+  		}
+	}
+
+	.nav-container-small{
+		display: none;
+	}
+
+	.nav-container-left{
+		display: block;
+		padding-left: 2.5em;
+	}
+
+	.nav-container-right{
+		display: block;
+		padding-right: 2.5em;
+	}
+
 
 	.extra_info{
 		display: inline;
 	}
-
 	
 
 
@@ -97,6 +156,11 @@
 		display: none;
 	}
 
+
+	.hours-location{
+		margin: 0 auto;
+	}
+
 	.add-info{
 		display: block;
 	}
@@ -106,6 +170,40 @@
 
 @media(min-width: 600px){
 	
+	h2{
+	    margin: 0 auto 1rem auto;
+	    line-height: 1.4;
+	}
+
+	.logo-container{
+	    z-index: 2;
+	    width: 100%;
+	    max-width: 184px;
+	    margin: 1rem auto;
+	    position: relative;
+	    margin-bottom: -90px;
+	}
+
+	.hours-location{
+		margin-top: 2rem;
+	}
+
+	.hours, .location{
+		width: 40%;
+	}
+
+	.hours{
+		float: left;
+		margin-left: 0;
+		margin-right: 5%;
+	}
+
+	.location{
+		margin: 0;
+		margin-right: 5%;
+		float: right;
+	}
+
 	.about-us-text{
 		width: 60%;
 	}

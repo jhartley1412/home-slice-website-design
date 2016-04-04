@@ -1,25 +1,19 @@
-
-Blog Post
--------------
-Our first big projects coming up; redesigning a website! I'm excited to be designing from scratch (as opposed to creating webpages that already exist). I mostly just hope that I'm able to follow through with my work until the end. During school, one of my biggest downfalls was getting burned out too early in the design process. Fingers crossed I don't sprint headfast at the begining and run out of breath by the end!
-
-
-
-
 Inspirational sites 
 --------------------
 
 https://www.dominos.com/en/
-	Not only is it a fellow pizza joint, I've always thought Dominos has had a strong graphic design team (both in brand and overall presence). They have a good mix of humor and functionability.
+	Not only is it a fellow pizza joint, I've always thought Dominos has had a strong graphic design team (both in brand and overall presence). They have a good mix of humor and functionality.
 
 http://www.yaghisnewyorkpizzeria.com
 	Another pizza site, this one is clean, easy to read, and uses a tantalizing color combo of red and green (that isn't christmassy, but actually makes you kind of hungry), I also like that it's mostly centered 
+
+	EDIT: since their website redesign (some time in March?), some of what I've initially written is not longer valid. However, their over cleanness is still apparent. So is that fact that some of the elements are center aligned. I also like how much white space their site is now; it's much more breathable. This site is staying as one of my sites for inspiration, but for a few different reasons than before.
 
 https://www.toppers.com
 	Yet another pizza place, although I don't love long pages you have to scroll down to, I do love the grittiness and "streets"-style of the site, and will probably add a sense of "young culture" into Home Slice's website 
 
 http://www.vertskebap.com/nutrition/
-	Specifically I do like how, on the Nutrition and About pages, they have a banner of their ingrediants layed out on white
+	Specifically I do like how, on the Nutrition and About pages, they have a banner of their ingredients laid out on white
 
 http://www.bk.com
 	I like that they have big, in your face font sizes, and, like most of the other sites, big res images of their food

@@ -14,28 +14,14 @@
 // http://localhost:4000/
 
 
-
-body{
-	font-family: "ff-tisa-sans-web-pro";
-	line-height: 2;
- // background-color: $brand-color5;
-
-  a{
-    &:hover{
-      cursor: pointer;
-    }
-  }
-}
-
-.bold-text{
-  font-weight: bold;
-}
-
-
 // header - nav bar
 
 header{
   overflow: hidden;
+}
+
+.logo{
+  width: 100%;
 }
 
 nav{
@@ -46,23 +32,18 @@ nav{
   font-family: "ff-more-web-pro-condensed", serif;
   font-size: 20px;
   position: relative;
-
-  border-bottom: 25px solid $brand-color2;
 }
 
 
 .nav-buttons-container{
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.3em;
   overflow: hidden;
   
   a{
     padding: 0.5rem 1rem;
-    border-radius: 10px;
     color: white;
     text-decoration: none;
 
@@ -71,7 +52,16 @@ nav{
       cursor: pointer;
     }
   }
+}
 
+.nav-container-small{
+    a{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      display: block;
+      text-align: center;
+    }
 }
 
 .nav-container-left{
@@ -86,6 +76,10 @@ nav{
   box-sizing: border-box;
   text-align: right;
 
+}
+
+.current-nav-button{
+  background-color: #652319;
 }
 
 
@@ -124,7 +118,7 @@ nav{
     font-style: italic;
     font-size: 25px;
     letter-spacing: 2px;
-    margin-top: -1em;
+    margin-top: -1rem;
     color: $brand-color1;
   }
 }
@@ -137,11 +131,6 @@ nav{
   color: white;
   text-align: center;
   position: relative;
-
-  h1, h2{
-    margin: 0 auto 1rem auto;
-    line-height: 1.4;
-  }
 }
 
 .about-us-text{
@@ -149,7 +138,7 @@ nav{
   max-width: 700px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1rem;
   line-height: 2;
   position: relative;
   overflow: hidden;
@@ -165,37 +154,47 @@ nav{
 
 .hours-location{
   width: 70%;
-  max-width: 900px;
-  padding: 2em;
-  margin: 0 auto;
-  color: white;
+  max-width: 960px;
+  min-width: 300px;
+  padding: 1rem;
+  color: $brand-color5;
   overflow: hidden;
 
-  h2{
+  h1{
     margin: 0 auto;
     text-align: center;
   }
 }
 
 .hours{
-  float: left;
-}
 
-.location{
-  float: right;
-  text-align: center;
-
-  h3{
-    margin: 1rem auto 0 auto;
+  .bold-text{
+    margin-top: 1.5rem;
+    margin-bottom: -0.2rem;
   }
 
   p{
     margin: 0 auto;
   }
+}
 
-  a{
+.location{
+
+  h3{
+    margin: 1rem auto 0 auto;
+    text-align: center;
+  }
+
+  p{
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+
+  .address-link, a{
     color: $brand-color4;
     text-decoration: underline;
+    text-align: center;
   }
 }
 
@@ -258,8 +257,10 @@ nav{
   min-width: 230px;
   max-width: 320px;
   margin: 2rem auto;
+  margin-left: 0.8rem;
   box-sizing: border-box;
-  border: 10px solid #F9F9F9;
+  border: 10px solid $brand-color2;
+  display: block;
 
   &:hover{
     cursor: pointer;
@@ -269,7 +270,7 @@ nav{
 
 .more-about-us{
   float: left;
-  color: white;
+  color: $brand-color5;
   overflow: hidden;
   box-sizing: border-box;
 
@@ -338,7 +339,7 @@ nav{
   text-shadow:
   4px 2px 0 $brand-color1,
   /* Simulated effect for Firefox and Opera
-     and nice enhancement for WebKit */
+     and nice enhancrement for WebKit */
   -1px -1px 0 $brand-color1,  
   1px -1px 0 $brand-color1,
   -1px  1px 0 $brand-color1,
@@ -352,7 +353,7 @@ nav{
 
 footer{
   padding-bottom: 2rem;
-	background-color: $brand-color5;
+  background-color: darken($brand-color1, 20%);
 	clear: both;
 
 	color: white;

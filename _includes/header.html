@@ -6,12 +6,29 @@
 
 	<nav class="col-md-15">
 
+		<!-- MOBILE/SMALL BROWSER SIZE -->
+		<div class="nav-buttons-container col-sm-1">
+			
+			<div class="nav-container-small">
+				<a href="index.html" {% if page.url == '/' %} class="current-nav-button" {% endif %}> Home </a>
+
+				<a href="menu-page.html" {% if page.url == '/menu-page.html' %} class='current-nav-button' {% endif %}> Menu </a>
+			
+				<a href="#"> Jobs </a>
+
+				<a href="#"> Store </a>
+			</div>
+
+		</div>
+
+
+		<!-- DESKTOP/MID-LARGE BROWSER SIZE -->
 		<div class="nav-buttons-container col-md-5">
 			
 			<div class="nav-container-left">
-				<a href="index.html"> Home </a>
+				<a href="index.html" {% if page.url == '/' %} class="current-nav-button" {% endif %}> Home </a>
 
-				<a href="menu-page.html"> Menu </a>
+				<a href="menu-page.html" {% if page.url == '/menu-page.html' %} class='current-nav-button' {% endif %}> Menu </a>
 			</div>
 			
 

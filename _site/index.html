@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abby Larner | Site Title</title>
+  <title>Janina Hartley | Home Slice Redesign</title>
 	
 	<!-- NORMALIZE -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
@@ -20,7 +20,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
-  <link rel="stylesheet" href="/css/main.css">
+  	<link rel="stylesheet" href="/css/main.css">
+
+  	<link rel="text/javascript" href="/jquery/jquery-2.2.2.min.map">
 </head>
 
 
@@ -35,12 +37,29 @@
 
 	<nav class="col-md-15">
 
+		<!-- MOBILE/SMALL BROWSER SIZE -->
+		<div class="nav-buttons-container col-sm-1">
+			
+			<div class="nav-container-small">
+				<a href="index.html"  class="current-nav-button" > Home </a>
+
+				<a href="menu-page.html" > Menu </a>
+			
+				<a href="#"> Jobs </a>
+
+				<a href="#"> Store </a>
+			</div>
+
+		</div>
+
+
+		<!-- DESKTOP/MID-LARGE BROWSER SIZE -->
 		<div class="nav-buttons-container col-md-5">
 			
 			<div class="nav-container-left">
-				<a href="index.html"> Home </a>
+				<a href="index.html"  class="current-nav-button" > Home </a>
 
-				<a href="menu-page.html"> Menu </a>
+				<a href="menu-page.html" > Menu </a>
 			</div>
 			
 
@@ -83,20 +102,34 @@
 
     <div class="hours-location">
 
-      <h2> Where to find us </h2>
-
       <div class="hours"> 
-        <p> <span class="bold-text"> Mon Wed Thurs Sun : </span> 11am - 11pm </p>
 
-        <p> <span class="bold-text"> Tues : </span> 11am - 11pm (More Home Slice Take out Only) </p>
+		<h1> Our Hours </h1>
 
-        <p> <span class="bold-text"> Fri Sat : </span> 11am - Midnight (More Home Slice Take out Open until 3am) </p>
+        <p class="bold-text"> Mon | Wed | Thurs | Sun </p>
+
+        <p> 11am - 11pm </p>
+
+        <p class="bold-text"> Tues </p>
+
+        <p> 11am - 11pm </p> 
+        <p> (More Home Slice Take out Only) </p>
+
+        <p class="bold-text"> Fri | Sat </p>
+
+        <p> 11am - Midnight </p> 
+        <p> (More Home Slice Take out Open until 3am) </p>
+
       </div>
 
       <div class="location">
-        <h3> Home Slice Dine In / More Home Slice Take Out </h3>
+		
+		<h1> Our Locations </h1>
+		<p> We have two locations (side by side). Our Home Slice Dine In resturant, and our More Home Slice building for just take out, or a quick bite!
 
-        <p> <a href="#"> 1415 South Congress </a> / <a href="#"> 1421 South Congress </a> </p> 
+        <h3> Home Slice Dine In | More Home Slice Take Out </h3>
+
+        <p class="address-link"> <a href="#"> 1415 South Congress </a> | <a href="#"> 1421 South Congress </a> </p> 
 
         <a href="#"> <img class="map" src="./site-images/google-map.png"> </a>
 
