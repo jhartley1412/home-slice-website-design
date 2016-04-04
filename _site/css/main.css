@@ -249,11 +249,11 @@ h2 {
   .about-us-img {
     display: none; }
 
-  .hours-location {
+  .extra-info {
     margin: 0 auto;
     margin-top: 1rem; }
 
-  .hours, .location {
+  .hours, .location, .more-about-us {
     width: 100%;
     float: none; }
 
@@ -263,7 +263,7 @@ h2 {
   .location {
     margin-top: 2rem; }
 
-  .add-info {
+  .more-about-us {
     display: none; } }
 @media (min-width: 620px) {
   .logo-container {
@@ -304,22 +304,27 @@ h2 {
   .about-us-img {
     display: block; }
 
-  .hours-location {
+  .extra-info {
     margin: 0 auto; }
 
   .hours p, .hours .bold-text, .location p, .location .bold-text {
     margin-top: 1.5rem; }
 
-  .add-info {
-    display: block; } }
+  .more-about-us {
+    display: block;
+    margin-top: 4rem; }
+
+  .more-about-us-link {
+    width: 200px;
+    margin: 0 auto; } }
 @media (min-width: 760px) {
-  .hours-location {
+  .extra-info {
     margin-top: 2rem; }
 
-  .hours, .location {
+  .hours, .location, .more-about-us {
     width: 40%; }
 
-  .hours {
+  .hours, .more-about-us {
     float: left;
     margin-left: 0;
     margin-right: 5%; }
@@ -327,7 +332,13 @@ h2 {
   .location {
     margin: 0;
     margin-right: 5%;
-    float: right; } }
+    float: right; }
+
+  .more-about-us-link {
+    width: 40%;
+    margin: 1rem 2.5%;
+    min-width: 200px;
+    float: left; } }
 @media (min-width: 0) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
     width: 100%;
@@ -507,14 +518,14 @@ nav {
     background-color: #3f7533;
     cursor: pointer; }
 
-.hours-location {
+.extra-info {
   width: 70%;
   max-width: 1200px;
   min-width: 300px;
   padding: 1rem;
   color: #252525;
   overflow: hidden; }
-  .hours-location h1 {
+  .extra-info h1 {
     margin: 0 auto;
     text-align: center; }
 
@@ -531,6 +542,16 @@ nav {
   text-align: left; }
 .location .address-link, .location a {
   text-align: center; }
+
+.more-about-us-link {
+  margin-top: 1rem;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 10px; }
+  .more-about-us-link:nth-child(even) {
+    background-color: #d30300; }
+  .more-about-us-link:nth-child(odd) {
+    background-color: #529843; }
 
 .add-info {
   width: 100%;
@@ -556,27 +577,6 @@ nav {
   display: block; }
   .map:hover {
     cursor: pointer; }
-
-.more-about-us {
-  float: left;
-  color: #252525;
-  overflow: hidden;
-  box-sizing: border-box; }
-  .more-about-us a {
-    color: white; }
-
-.more-about-us-link {
-  width: 100%;
-  min-width: 200px;
-  height: 150px;
-  margin: 1rem auto;
-  text-align: center;
-  float: left;
-  border-radius: 10px; }
-  .more-about-us-link:nth-child(even) {
-    background-color: #d30300; }
-  .more-about-us-link:nth-child(odd) {
-    background-color: #529843; }
 
 .big-text {
   z-index: 2;

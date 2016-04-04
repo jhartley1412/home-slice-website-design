@@ -54,13 +54,13 @@
 		display: none;
 	}
 
-	.hours-location{
+	.extra-info{
 		margin: 0 auto;
 		margin-top: 1rem;
 	}
 
 
-	.hours, .location{
+	.hours, .location, .more-about-us{
 		width: 100%;
 		float: none;
 	}
@@ -75,12 +75,12 @@
 		margin-top: 2rem;
 	}
 
-
-
-	.add-info{
+	.more-about-us{
 		display: none;
 	}
 }
+
+
 
 
 
@@ -121,8 +121,6 @@
 		display: inline;
 	}
 	
-
-
 	.home-slice-intro{
 		padding-bottom: 2rem;
 	}
@@ -140,7 +138,7 @@
 	}
 
 
-	.hours-location{
+	.extra-info{
 		margin: 0 auto;
 	}
 
@@ -150,24 +148,32 @@
 		}
 	}
 
-	.add-info{
+	.more-about-us{
 		display: block;
+		margin-top: 4rem;
+	}
+
+	.more-about-us-link{
+	  width: 200px;
+	  margin: 0 auto;
 	}
 }
 
 
 
+
+
 @media(min-width: 760px){
 
-	.hours-location{
+	.extra-info{
 		margin-top: 2rem;
 	}
 
-	.hours, .location{
+	.hours, .location, .more-about-us{
 		width: 40%;
 	}
 
-	.hours{
+	.hours, .more-about-us{
 		float: left;
 		margin-left: 0;
 		margin-right: 5%;
@@ -177,6 +183,14 @@
 		margin: 0;
 		margin-right: 5%;
 		float: right;
+	}
+
+	.more-about-us-link{
+	  width: 40%;
+	  margin: 1rem 2.5%;
+	  min-width: 200px;
+	  float: left;
+
 	}
 
 
