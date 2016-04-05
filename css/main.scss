@@ -189,6 +189,10 @@ nav{
 
 .hours{
 
+  h3{
+    color: $brand-color1;
+  }
+
   p{
     margin: 0 auto;
   }
@@ -207,11 +211,28 @@ nav{
   }
 }
 
+.more-about-us{
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.more-about-us-link-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .more-about-us-link{
+  width: 90%;
   margin-top: 1rem;
-  min-width: 200px;
   text-align: center;
+  background-color: $brand-color2;
   border-radius: 10px;
+
+  &:hover{
+    background-color: darken($brand-color2, 10%);
+  }
 }
 
 

@@ -20,7 +20,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 
-@media (min-width: 620px){
+@media (min-width: 650px){
   
   .col-md-1{
     @include grid(1);
