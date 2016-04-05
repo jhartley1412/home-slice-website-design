@@ -176,6 +176,7 @@ nav{
   width: 70%;
   max-width: 1200px;
   min-width: 300px;
+  margin: 0 auto;
   padding: 1rem;
   color: $brand-color5;
   overflow: hidden;
@@ -188,21 +189,12 @@ nav{
 
 .hours{
 
-  .bold-text{
-    margin-bottom: -0.2rem;
-  }
-
   p{
     margin: 0 auto;
   }
 }
 
 .location{
-
-  h3{
-    margin: 1rem auto 0 auto;
-    text-align: center;
-  }
 
   p{
     margin: 0 auto;
@@ -220,69 +212,8 @@ nav{
   min-width: 200px;
   text-align: center;
   border-radius: 10px;
-
-  &:nth-child(even){
-    background-color: $brand-color1;
-  }
-
-  &:nth-child(odd){
-    background-color: $brand-color2;
-  }
-
 }
 
-
-
-
-%front-page-image-container{
-  float: left;
-  padding-top: 3rem;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center;
-}
-
-%front-page-background-image{
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0 auto;
-}
-
-%front-page-h3{
-  z-index: 2;
-  color: white;
-  font-size: 28px;
-  line-height: 1;
-  margin: 0 auto;
-  position: relative;
-}
-
-
-
-
-
-// additional info styles
-
-
-.add-info{
-  width: 100%;
-  overflow: hidden;
-  background-color: darken($brand-color1, 20%);
-  border-top: 25px solid $brand-color1;
-}
-
-.add-info-content{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 2rem;
-}
 
 .map{
   width: 100%;
@@ -295,37 +226,6 @@ nav{
 
   &:hover{
     cursor: pointer;
-  }
-}
-
-
-.big-text{
-  z-index: 2;
-  font-size: 36px;
-  line-height: 1;
-  margin: 0 auto;
-  position:relative;
-
-  /* WebKit (Safari/Chrome) Only */
-  // -webkit-text-stroke: 1px $brand-color1;
-
-  /* If we weren't using text-shadow, we'd set a fallback color
-   and use this to set color instead
-  -webkit-text-fill-color: white; */
-
-  color: $brand-color4;
-
-  text-shadow:
-  4px 2px 0 $brand-color1,
-  /* Simulated effect for Firefox and Opera
-     and nice enhancrement for WebKit */
-  -1px -1px 0 $brand-color1,  
-  1px -1px 0 $brand-color1,
-  -1px  1px 0 $brand-color1,
-  1px  1px 0 $brand-color1;
-
-  .queen-of-pies{
-    font-style: italic;
   }
 }
 

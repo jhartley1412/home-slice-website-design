@@ -41,8 +41,15 @@ h2{
 	font-style: italic;
 }
 
+h3{
+	color: $brand-color1;
+	margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
 .bold-text{
   font-weight: bold;
+  margin-bottom: -0.2rem;
 }
 
 .no-underline{
