@@ -224,12 +224,18 @@ nav{
 
   p{
     margin: 0 auto;
+    margin-top: 1.5rem;
     text-align: left;
   }
 
   .address-link, a{
     text-align: center;
     color: $brand-color1;
+    margin: 0 auto;
+  }
+
+  h3{
+    margin-top: 2rem;
   }
 }
 

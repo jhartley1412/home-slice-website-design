@@ -77,121 +77,40 @@ h3 {
   text-decoration: none; }
 
 .menu-container {
-  width: 100%;
   max-width: 1024px;
-  margin: 2em auto;
+  margin: 3rem auto;
   overflow: hidden;
   box-sizing: border-box;
   border: 15px solid #d30300;
   border-radius: 20px; }
+  .menu-container h1, .menu-container h2 {
+    clear: both; }
+  .menu-container h1 {
+    margin: 2rem; }
+  .menu-container h3 {
+    margin-top: 0; }
+  .menu-container p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
 
-.menu-pizza, .menu-booze, .menu-salads-antipasta, .menu-desserts-drinks {
-  width: 100%;
-  overflow: hidden; }
-
-.menu-booze h2 {
-  text-align: center; }
-.menu-booze h3 {
-  text-align: center; }
-
-@media (min-width: 0px) {
-  .pizza-toppings {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem; }
-
-  .tried-and-true {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem; }
-    .tried-and-true h3 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 17px; }
-
-  .salads, .antipasta, .calzone, .subs, .wine, .beer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem; }
-    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
-      font-weight: 400; }
-
-  .desserts, .beverages {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2rem; }
-    .desserts h3, .beverages h3 {
-      font-weight: 400; }
-    .desserts .menu-italic, .beverages .menu-italic {
-      text-align: center; } }
-@media (min-width: 600px) {
-  .pizza-toppings {
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden; }
-
-  .tried-and-true {
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden; }
-    .tried-and-true h3 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 17px; }
-
-  .salads, .antipasta, .calzone, .subs, .wine, .beer {
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden; }
-    .salads h3, .antipasta h3, .calzone h3, .subs h3, .wine h3, .beer h3 {
-      font-weight: 400; }
-
-  .desserts, .beverages {
-    width: 40%;
-    margin: auto 5%;
-    float: left;
-    overflow: hidden; }
-    .desserts h3, .beverages h3 {
-      font-weight: 400; }
-    .desserts .menu-italic, .beverages .menu-italic {
-      text-align: center; } }
 .row-food {
-  width: 90%;
-  overflow: hidden; }
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 1rem auto; }
 
-.food-option {
-  float: left;
-  margin: 0;
-  font-size: 17px; }
-
-.tried-menu-container {
-  width: 300px;
-  margin: 0 auto; }
-  .tried-menu-container .fa-circle {
-    padding: 0 5px 5px 0; }
-
-.menu-italic {
-  font-style: italic;
-  font-size: 1rem; }
+.food-option, .food-extra-info {
+  float: left; }
 
 .food-price {
-  float: right;
-  font-style: italic;
-  margin: 0 auto 0.5rem;
-  font-size: 17px; }
+  float: right; }
 
-.food-extra-info {
-  float: left;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 1rem; }
+.menu-pizza {
+  width: 90%;
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2rem; }
 
 body {
   font-family: "ff-tisa-sans-web-pro";
@@ -635,10 +554,14 @@ nav {
 
 .location p {
   margin: 0 auto;
+  margin-top: 1.5rem;
   text-align: left; }
 .location .address-link, .location a {
   text-align: center;
-  color: #d30300; }
+  color: #d30300;
+  margin: 0 auto; }
+.location h3 {
+  margin-top: 2rem; }
 
 .more-about-us a {
   color: white;
