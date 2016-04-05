@@ -117,7 +117,7 @@ nav{
 .front-page-welcome{
   z-index: 2;
   width: 100%;
-  margin: 3rem auto;
+  margin-top: 3rem;
   position: relative;
   box-sizing: border-box;
 
@@ -172,13 +172,35 @@ nav{
   }
 }
 
+
+.front-page-welcome-nav{
+  width: 100%;
+  margin-bottom: 3rem;
+  background-color: $brand-color2;
+}
+
+.front-page-nav-link-container{
+  width: 100%;
+  min-width: 500px;
+  max-width: 700px;
+  margin: 0 auto;
+
+  a{
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+  }
+}
+
+
+
+
 .extra-info{
   width: 70%;
   max-width: 1200px;
   min-width: 300px;
   margin: 0 auto;
   padding: 1rem;
-  color: $brand-color5;
+  color: $brand-color3;
   overflow: hidden;
 
   h1{
@@ -207,7 +229,7 @@ nav{
 
   .address-link, a{
     text-align: center;
-
+    color: $brand-color1;
   }
 }
 
@@ -271,6 +293,10 @@ footer{
 
 .foot-maillist, .foot-copyright-info{
 	@extend %foot-divs;
+}
+
+.foot-maillist{
+    font-size: 1.5rem;
 }
 
 

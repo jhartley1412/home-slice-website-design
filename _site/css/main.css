@@ -2,7 +2,7 @@ body {
   font-family: "ff-tisa-sans-web-pro";
   line-height: 2; }
   body a {
-    color: #e9f898;
+    color: white;
     text-decoration: underline; }
     body a:hover {
       cursor: pointer; }
@@ -26,6 +26,7 @@ h2 {
   font-style: italic; }
 
 h3 {
+  font-size: 1em;
   margin: 1rem auto 0 auto;
   text-align: center; }
 
@@ -40,7 +41,7 @@ body {
   font-family: "ff-tisa-sans-web-pro";
   line-height: 2; }
   body a {
-    color: #e9f898;
+    color: white;
     text-decoration: underline; }
     body a:hover {
       cursor: pointer; }
@@ -64,6 +65,7 @@ h2 {
   font-style: italic; }
 
 h3 {
+  font-size: 1em;
   margin: 1rem auto 0 auto;
   text-align: center; }
 
@@ -195,7 +197,7 @@ body {
   font-family: "ff-tisa-sans-web-pro";
   line-height: 2; }
   body a {
-    color: #e9f898;
+    color: white;
     text-decoration: underline; }
     body a:hover {
       cursor: pointer; }
@@ -219,6 +221,7 @@ h2 {
   font-style: italic; }
 
 h3 {
+  font-size: 1em;
   margin: 1rem auto 0 auto;
   text-align: center; }
 
@@ -262,6 +265,9 @@ h3 {
     width: 100%; }
 
   .about-us-img {
+    display: none; }
+
+  .front-page-welcome-nav {
     display: none; }
 
   .extra-info {
@@ -317,6 +323,9 @@ h3 {
     width: 60%; }
 
   .about-us-img {
+    display: block; }
+
+  .front-page-welcome-nav {
     display: block; }
 
   .extra-info {
@@ -547,7 +556,7 @@ nav {
 .front-page-welcome {
   z-index: 2;
   width: 100%;
-  margin: 3rem auto;
+  margin-top: 3rem;
   position: relative;
   box-sizing: border-box; }
   .front-page-welcome .tag-line {
@@ -593,6 +602,20 @@ nav {
     background-color: #3f7533;
     cursor: pointer; }
 
+.front-page-welcome-nav {
+  width: 100%;
+  margin-bottom: 3rem;
+  background-color: #529843; }
+
+.front-page-nav-link-container {
+  width: 100%;
+  min-width: 500px;
+  max-width: 700px;
+  margin: 0 auto; }
+  .front-page-nav-link-container a {
+    margin-right: 2rem;
+    margin-left: 1.5rem; }
+
 .extra-info {
   width: 70%;
   max-width: 1200px;
@@ -614,7 +637,8 @@ nav {
   margin: 0 auto;
   text-align: left; }
 .location .address-link, .location a {
-  text-align: center; }
+  text-align: center;
+  color: #d30300; }
 
 .more-about-us a {
   color: white;
@@ -658,3 +682,6 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 15px; }
+
+.foot-maillist {
+  font-size: 1.5rem; }

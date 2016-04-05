@@ -1,9 +1,7 @@
 
 $brand-color1: #d30300; //red
 $brand-color2: #529843; //green
-$brand-color3: #dd6503; //orange
-$brand-color4: #e9f898; //yellow
-$brand-color5: #252525; //grey
+$brand-color3: #252525; //grey
 
 
 body{
@@ -12,7 +10,7 @@ body{
  // background-color: $brand-color5;
 
 	a{
-		color: $brand-color4;
+		color: white;
 		text-decoration: underline;
 
 	    &:hover{
@@ -42,6 +40,7 @@ h2{
 }
 
 h3{
+	font-size: 1em;
 	margin: 1rem auto 0 auto;
     text-align: center;
 }
@@ -54,6 +53,7 @@ h3{
 .no-underline{
 	text-decoration: none;
 }
+
 
 
 
