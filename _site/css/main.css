@@ -498,7 +498,7 @@ nav {
   background-color: #d30300;
   width: 100%;
   float: left;
-  font-family: "ff-more-web-pro-condensed", serif;
+  font-family: "ff-tisa-sans-web-pro";
   font-size: 20px;
   position: relative; }
 
@@ -509,7 +509,7 @@ nav {
   margin: 0 auto;
   overflow: hidden; }
   .nav-buttons-container-sm a, .nav-buttons-container-md a {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     color: white;
     text-decoration: none; }
     .nav-buttons-container-sm a:hover, .nav-buttons-container-md a:hover {
